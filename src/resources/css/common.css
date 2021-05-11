@@ -1,1 +1,51 @@
-/* No CSS *//*# sourceMappingURL=common.css.map */
+/* header */
+.header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 84px;
+  background-color: #fee253;
+}
+
+.header .header_inner .logo {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  width: 64px;
+  height: 64px;
+  margin-left: -50px;
+  text-indent: -9999px;
+}
+
+.header .header_inner .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.header .header_inner .btn-gnb {
+  display: none;
+}
+
+.header.on .header_inner .logo {
+  left: 18%;
+  margin-left: 0;
+}
+
+.header.on .header_inner .gnb_wrap {
+  display: none;
+}
+
+.header.on .header_inner .gnb_wrap.on {
+  display: block;
+}
+
+.header.on .header_inner .gnb_wrap.on .gnb_inner {
+  margin-top: 22px;
+}
+
+.header.on .header_inner .gnb_wrap .gnb_inner {
+  position: relative;
+  margin-top: 31px;
+}
+/*# sourceMappingURL=common.css.map */
