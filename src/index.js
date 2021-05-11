@@ -1,11 +1,11 @@
 import './resources/css/common.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './component/layout/header';
-import Footer from './component/layout/footer';
-import AboutContent from './component/about/aboutContent';
-import CareerContent from './component/career/careerContent';
-import ProjectContent from './component/project/projectContent';
+import Header from './components/structure/Header/Header';
+import Footer from './components/structure/Footer/Footer';
+import AboutContent from './components/structure/about/aboutContent';
+import CareerContent from './components/structure/career/careerContent';
+import ProjectContent from './components/structure/project/projectContent';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

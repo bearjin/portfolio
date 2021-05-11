@@ -27,6 +27,12 @@
   display: none;
 }
 
+.header .header_inner .gnb_inner li {
+  display: inline-block;
+  width: 14.3%;
+  text-align: center;
+}
+
 .header.on .header_inner .logo {
   left: 18%;
   margin-left: 0;
