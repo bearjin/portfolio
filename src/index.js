@@ -3,17 +3,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/structure/Header/Header';
 import Footer from './components/structure/Footer/Footer';
-import AboutContent from './components/structure/about/aboutContent';
-import CareerContent from './components/structure/career/careerContent';
-import ProjectContent from './components/structure/project/projectContent';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <Header />
-    <AboutContent />
-    <CareerContent />
-    <ProjectContent />
     <Footer />
   </React.StrictMode>,
   document.getElementById('root')

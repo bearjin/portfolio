@@ -1,22 +1,48 @@
 import React, { Component } from 'react';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+    Link
+} from "react-router-dom";
+import Main from '../../../pages/Main';
+import About from '../../../pages/About';
+import Career from '../../../pages/Career';
+import Project from '../../../pages/Project';
 
 class Header extends Component {
     render () {
         return (
-            <header id="header" className="header">
-                <div className="header_inner">
-                    <h1 className="logo"><a href="index.html">logo</a></h1>
-                    <button className="btn-gnb">MENU</button>
-                    <nav id="gnb" className="gnb_wrap">
-                        <ul className="gnb_inner">
-                            <li className="home">HOME</li>
-                            <li className="about">ABOUT ME</li>
-                            <li className="career">CAREER</li>
-                            <li className="portfolio">PORTFOLIO</li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
+            <Router>
+                <header id="header" className="header">
+                    <div className="header_inner">
+                        <h1 className="logo">logo</h1>
+                        <button className="btn-gnb">MENU</button>
+                            <nav id="gnb" className="gnb_wrap">
+                                <ul className="gnb_inner">
+                                    <li><Link to="/main">Main</Link></li>
+                                    <li><Link to="/about">About</Link></li>
+                                    <li><Link to="/career">Career</Link></li>
+                                    <li><Link to="/project">Project</Link></li>
+                                </ul>
+                            </nav>
+                    </div>
+                </header>
+                <Switch>
+                    <Route path="/main">
+                        <Main />
+                    </Route>
+                    <Route path="/about">
+                        <About />
+                    </Route>
+                    <Route path="/career">
+                        <Career />
+                    </Route>
+                    <Route path="/project">
+                        <Project />
+                    </Route>
+                </Switch>
+            </Router>
         );
     }
 }
