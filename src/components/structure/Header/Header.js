@@ -18,14 +18,14 @@ class Header extends Component {
                     <div className="header_inner">
                         <h1 className="logo">logo</h1>
                         <button className="btn-gnb">MENU</button>
-                            <nav id="gnb" className="gnb_wrap">
-                                <ul className="gnb_inner">
-                                    <li><Link to="/">Home</Link></li>
-                                    <li><Link to="/about">About</Link></li>
-                                    <li><Link to="/career">Career</Link></li>
-                                    <li><Link to="/project">Project</Link></li>
-                                </ul>
-                            </nav>
+                        <nav id="gnb" className="gnb_wrap">
+                            <ul className="gnb_inner">
+                                <li className="depth1"><Link className="depth1_link" to="/">Home</Link></li>
+                                <li className="depth1"><Link className="depth1_link" to="/about">About</Link></li>
+                                <li className="depth1"><Link className="depth1_link" to="/career">Career</Link></li>
+                                <li className="depth1"><Link className="depth1_link" to="/project">Project</Link></li>
+                            </ul>
+                        </nav>
                     </div>
                 </header>
                 <Switch>

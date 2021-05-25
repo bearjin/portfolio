@@ -1,4 +1,4 @@
-import './resources/css/common.css';
+import './resources/css/base.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './components/structure/Header/Header';
