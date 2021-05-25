@@ -20,7 +20,7 @@ class Header extends Component {
                         <button className="btn-gnb">MENU</button>
                             <nav id="gnb" className="gnb_wrap">
                                 <ul className="gnb_inner">
-                                    <li><Link to="/main">Main</Link></li>
+                                    <li><Link to="/">Home</Link></li>
                                     <li><Link to="/about">About</Link></li>
                                     <li><Link to="/career">Career</Link></li>
                                     <li><Link to="/project">Project</Link></li>
@@ -29,7 +29,7 @@ class Header extends Component {
                     </div>
                 </header>
                 <Switch>
-                    <Route path="/main">
+                    <Route exact path="/">
                         <Main />
                     </Route>
                     <Route path="/about">
