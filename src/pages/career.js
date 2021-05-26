@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import CareerContent from '../components/contents/CareerContent';
 
 class Career extends Component {
     render() {
         return(
-            <section className="page_career">커리어 페이지</section>
+            <section className="page_career">
+                <CareerContent />
+            </section>
         );
     }
 }
