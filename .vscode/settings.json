@@ -1,0 +1,15 @@
+{
+    "liveSassCompile.settings.excludeList": [
+        "**/node_modules/**",
+        ".vscode/**"
+    ],
+    "liveSassCompile.settings.formats":[
+        // This is Default.
+        {
+            "format": "compact",
+            "extensionName": ".css",
+            "savePath": "~/../css"
+        },
+    ],
+    "liveSassCompile.settings.generateMap": false
+}

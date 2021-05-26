@@ -1,0 +1,26 @@
+/* home */
+#home {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    background-color: #fee253;
+
+    .sec_inner {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        color: #393939;
+
+        .txt {
+            font-size: 36px;
+        }
+
+        .name {
+            font-weight: 700;
+            font-size: 30px;
+            margin-top: 30px;
+        }
+    }
+}
