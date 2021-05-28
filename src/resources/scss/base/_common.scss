@@ -17,9 +17,9 @@
             width: 64px;
             height: 64px;
             margin-left: -32px;
-            text-indent: -9999px;
             background: url(../images/desktop.png) 0 0 no-repeat;
             background-size: cover;
+            text-indent: -9999px;
         }
 
         .btn-gnb {
@@ -28,16 +28,16 @@
 
         .gnb_inner {
             display: flex;
-            height: 84px;
             align-items: center;
+            height: 84px;
 
             .depth1 {
                 flex: auto;
                 text-align: center;
 
                 .depth1_link {
-                    color: #978535;
                     font-size: 20px;
+                    color: #978535;
                 }
             }
         }
@@ -77,8 +77,8 @@
     background-color: #24242a;
 
     address {
-        color: #7a7a7a;
         font-size: 12px;
+        color: #7a7a7a;
         text-align: center;
         line-height: 60px;
     }
