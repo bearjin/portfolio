@@ -4,7 +4,7 @@ import profileImg from '../../resources/images/profile.jpg';
 class AboutContent extends Component {
     render() {
         return (
-            <section id="aboutMe" className="sec">
+            <section id="aboutCont" className="sec">
                 <div className="sec_inner">
                     <h2 className="sec_subj">ABOUT ME</h2>
                     <div className="sec_cont">

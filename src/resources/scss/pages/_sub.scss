@@ -1,6 +1,9 @@
 // common
 .sec {
+    width: 100%;
+
     &_subj {
+        margin-bottom: 30px;
         font-weight: 700;
         font-size: 50px;
         font-style: italic;
@@ -9,8 +12,7 @@
 }
 
 // home
-#home {
-    width: 100%;
+#homeCont {
     height: 50vh;
     background-color: #fee253;
 
@@ -33,10 +35,8 @@
 }
 
 // about
-#aboutMe {
-    width: 100%;
-    height: 50vh;
-    padding: 50px 0;
+#aboutCont {
+    padding: 100px 0;
     background-color: #fff;
 
     .sec_cont {
@@ -46,7 +46,7 @@
         .introduce {
             overflow: hidden;
             display: inline-block;
-            margin: 30px 0;
+            margin-bottom: 30px;
 
             .photo {
                 float: left;
@@ -71,8 +71,8 @@
                     }
 
                     .tit {
-                        font-weight: 700;
                         width: 100px;
+                        font-weight: 700;
                     }
                 }
 
@@ -90,8 +90,8 @@
                 margin-bottom: 20px;
                 background: #333;
                 border-radius: 50px;
-                line-height: 35px;
                 color: #fff;
+                line-height: 35px;
                 text-align: center;
             }
 
@@ -110,6 +110,86 @@
                         margin-top: -2px;
                         background-color: #393939;
                         content: "";
+                    }
+                }
+            }
+        }
+    }
+}
+
+// career
+#careerCont {
+    padding: 100px 0;
+    background-color: #222;
+    text-align: center;
+
+    .sec_subj {
+        color: #fff;
+    }
+
+    .sec_cont {
+        display: inline-block;
+
+        &_tit {
+            float: left;
+            font-size: 20px;
+            color: #fff;
+            letter-spacing: .03em;
+        }
+
+        .career {
+            text-align: left;
+
+            &_list {
+                margin-left: 310px;
+
+                li {
+                    font-size: 18px;
+                    color: #fff;
+                    line-height: 25px;
+                    letter-spacing: .02em;
+
+                    span {
+                        font-size: 13px;
+                        color: #ccc;
+                    }
+
+                    .date {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .skill {
+            &_list {
+                margin: 45px 0 0 310px;
+
+                li {
+                    position: relative;
+                    width: 400px;
+                    height: 33px;
+                    margin-top: 13px;
+                    background-color: #ddd;
+                    border-radius: 5px;
+
+                    .bar {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        height: 100%;
+                        padding: 0px 10px;
+                        background-color: #ffb500;
+                        border-radius: 5px;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 33px;
+                        letter-spacing: .05em;
+
+                        .percent {
+                            padding: 0px 2px;
+                            font-size: 8px;
+                        }
                     }
                 }
             }
