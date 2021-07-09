@@ -6,7 +6,7 @@ class CareerContent extends Component {
             <section id="careerCont" className="sec career">
                 <div className="sec_inner">
                     <h2 className="sec_subj">Career</h2>
-                    <ul className="career_list">
+                    <ul className="card_type_list">
                         <li className="item">
                             <div className="img">
                                 <span className="icon"></span>
@@ -41,13 +41,6 @@ class CareerContent extends Component {
                             </div>
                             <p className="subj">경남 아너스빌 분양(송추) <span className="role">UI개발팀 / Publisher</span></p>
                             <p className="date">2020.02 ~ 2020.03</p>
-                        </li>
-                        <li className="item">
-                            <div className="img">
-                                <span className="icon"></span>
-                            </div>
-                            <p className="subj">쉐보레 인터렉티브 카탈로그 <span className="role">UI개발팀 / Publisher</span></p>
-                            <p className="date">2019.02 ~ 2019.04</p>
                         </li>
                         <li className="item">
                             <div className="img">

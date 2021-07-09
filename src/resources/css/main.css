@@ -52,7 +52,7 @@ input[type=text]::-ms-clear { display: none; }
 
 ::-webkit-scrollbar { display: none; }
 
-#root { position: relative; }
+#root { position: relative; padding-bottom: 150px; }
 
 #root::before { content: ''; position: fixed; left: 0; top: 0; z-index: 1; width: 100%; height: 100%; border: 12px solid rgba(0, 0, 0, 0.04); -webkit-box-sizing: border-box; box-sizing: border-box; }
 
@@ -86,7 +86,7 @@ input[type=text]::-ms-clear { display: none; }
 
 .footer address { font-size: 12px; color: #7a7a7a; text-align: center; line-height: 60px; }
 
-.about { max-width: 800px; margin: 0 auto; }
+.about { max-width: 800px; }
 
 .about_intro { margin-bottom: 50px; }
 
@@ -120,21 +120,7 @@ input[type=text]::-ms-clear { display: none; }
 
 .career { max-width: 800px; }
 
-.career_list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-
-.career_list .item { width: 100%; max-width: calc((100% / 3) - 20px); margin: 0 10px 30px 10px; cursor: pointer; }
-
-.career_list .item:hover .img .icon { -webkit-transform: translate(-50%, -50%) scale(1.2); transform: translate(-50%, -50%) scale(1.2); }
-
-.career_list .item .img { position: relative; width: 100%; height: 150px; margin-bottom: 10px; border: 1px solid #000; border-radius: 20px; }
-
-.career_list .item .img .icon { position: absolute; left: 50%; top: 50%; width: 50px; height: 50px; background-color: #000; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-transition: -webkit-transform .5s ease-in; transition: -webkit-transform .5s ease-in; transition: transform .5s ease-in; transition: transform .5s ease-in, -webkit-transform .5s ease-in; }
-
-.career_list .item .subj { font-size: 16px; }
-
-.career_list .item .role { font-weight: 300; font-size: 12px; color: #666; }
-
-.career_list .item .date { font-weight: 300; font-size: 12px; color: #666; }
+.project { max-width: 800px; }
 
 .sec { position: relative; width: 100%; padding-top: 150px; margin: 0 auto; }
 
@@ -144,6 +130,22 @@ input[type=text]::-ms-clear { display: none; }
 
 .sec_subj::after { content: ''; display: inline-block; width: 65px; height: 4px; margin-left: 10px; background-color: #393939; }
 
+.card_type_list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.card_type_list .item { width: 100%; max-width: calc((100% / 3) - 20px); margin: 0 10px 30px 10px; cursor: pointer; }
+
+.card_type_list .item:hover .img .icon { -webkit-transform: translate(-50%, -50%) scale(1.2); transform: translate(-50%, -50%) scale(1.2); }
+
+.card_type_list .item .img { position: relative; width: 100%; height: 150px; margin-bottom: 10px; border: 1px solid #000; border-radius: 20px; }
+
+.card_type_list .item .img .icon { position: absolute; left: 50%; top: 50%; width: 50px; height: 50px; background-color: #000; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-transition: -webkit-transform .5s ease-in; transition: -webkit-transform .5s ease-in; transition: transform .5s ease-in; transition: transform .5s ease-in, -webkit-transform .5s ease-in; }
+
+.card_type_list .item .subj { font-size: 16px; }
+
+.card_type_list .item .role { font-weight: 300; font-size: 12px; color: #666; }
+
+.card_type_list .item .date { font-weight: 300; font-size: 12px; color: #666; }
+
 #homeCont { height: 100vh; background-color: #fee253; }
 
 #homeCont .sec_inner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 100%; text-align: center; }
@@ -151,45 +153,3 @@ input[type=text]::-ms-clear { display: none; }
 #homeCont .sec_inner .txt { font-size: 36px; }
 
 #homeCont .sec_inner .name { font-weight: 700; font-size: 30px; }
-
-#portfolioCont { width: 100%; padding: 100px 0; }
-
-#portfolioCont .sec_inner .portfolio_list { max-width: 1200px; margin: 0 auto; }
-
-#portfolioCont .sec_inner .portfolio_list li { overflow: hidden; margin-top: 50px; }
-
-#portfolioCont .sec_inner .portfolio_list li .frame { display: block; position: relative; width: 56.2%; height: 300px; background-repeat: no-repeat; background-size: 110%; background-position: 50%; text-indent: -9999px; }
-
-#portfolioCont .sec_inner .portfolio_list li .frame .link { display: block; position: absolute; width: 100%; height: 100%; background-position: 50%; }
-
-#portfolioCont .sec_inner .portfolio_list li:nth-child(odd) .frame { float: left; margin-right: 2.2%; }
-
-#portfolioCont .sec_inner .portfolio_list li:nth-child(even) .frame { float: right; margin-left: 2.2%; }
-
-#portfolioCont .sec_inner .portfolio_list li:hover { background-size: cover; -webkit-transition: all 1s; transition: all 1s; }
-
-#portfolioCont .sec_inner .portfolio_list li.on { overflow: hidden; }
-
-#portfolioCont .sec_inner .portfolio_list li.on .link { top: -10%; left: -5%; width: 110%; height: 110%; }
-
-#portfolioCont .sec_inner .portfolio_list li.on::after { display: block; position: absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); background-repeat: no-repeat; background-position: 50%; content: ''; -webkit-transition: all 1s; transition: all 1s; opacity: 0; }
-
-#portfolioCont .sec_inner .portfolio_list li.on:hover .link { -webkit-transform: scale(0.95, 0.95); transform: scale(0.95, 0.95); }
-
-#portfolioCont .sec_inner .portfolio_list li.on:hover::after { opacity: 1; }
-
-#portfolioCont .sec_inner .portfolio_list li .text { width: 41.5%; }
-
-#portfolioCont .sec_inner .portfolio_list li .text .subj .sort { font-size: 15px; color: #7a7a7a; }
-
-#portfolioCont .sec_inner .portfolio_list li .text .page { font-size: 13px; }
-
-#portfolioCont .sec_inner .portfolio_list li .text .txt { margin: 21px 0 40px; word-break: keep-all; }
-
-#portfolioCont .sec_inner .portfolio_list li .text .link { display: block; width: 120px; height: 30px; background-color: #000; font-size: 15px; color: #fff; line-height: 30px; text-align: center; -webkit-box-sizing: border-box; box-sizing: border-box; -webkit-transition: all .7s; transition: all .7s; }
-
-#portfolioCont .sec_inner .portfolio_list li .text .link:hover { background-color: #fee253; color: #000; }
-
-#portfolioCont .sec_inner .portfolio_list li:nth-child(odd) .text { float: left; }
-
-#portfolioCont .sec_inner .portfolio_list li:nth-child(even) .text { float: right; }
