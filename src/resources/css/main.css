@@ -82,7 +82,7 @@ input[type=text]::-ms-clear { display: none; }
 .header.on .header_inner .gnb_wrap .gnb_inner { position: relative; margin-top: 31px; }
 
 /* footer */
-.footer { width: 100%; height: 60px; background-color: #24242a; }
+.footer { position: fixed; left: 0; bottom: 0; z-index: 2; width: 100%; height: 60px; background-color: #24242a; }
 
 .footer address { font-size: 12px; color: #7a7a7a; text-align: center; line-height: 60px; }
 
@@ -118,7 +118,25 @@ input[type=text]::-ms-clear { display: none; }
 
 .about_skill .skills .item .info .rank_meter { display: inline-block; width: 16px; height: 16px; margin-left: 8px; border: 1px solid #000; border-radius: 50%; }
 
-.sec { position: relative; width: 100%; padding: 150px 0; }
+.career { max-width: 800px; }
+
+.career_list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.career_list .item { width: 100%; max-width: calc((100% / 3) - 20px); margin: 0 10px 30px 10px; cursor: pointer; }
+
+.career_list .item:hover .img .icon { -webkit-transform: translate(-50%, -50%) scale(1.2); transform: translate(-50%, -50%) scale(1.2); }
+
+.career_list .item .img { position: relative; width: 100%; height: 150px; margin-bottom: 10px; border: 1px solid #000; border-radius: 20px; }
+
+.career_list .item .img .icon { position: absolute; left: 50%; top: 50%; width: 50px; height: 50px; background-color: #000; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-transition: -webkit-transform .5s ease-in; transition: -webkit-transform .5s ease-in; transition: transform .5s ease-in; transition: transform .5s ease-in, -webkit-transform .5s ease-in; }
+
+.career_list .item .subj { font-size: 16px; }
+
+.career_list .item .role { font-weight: 300; font-size: 12px; color: #666; }
+
+.career_list .item .date { font-weight: 300; font-size: 12px; color: #666; }
+
+.sec { position: relative; width: 100%; padding-top: 150px; margin: 0 auto; }
 
 .sec_inner { position: relative; z-index: 1; padding: 0 25px; }
 
@@ -126,39 +144,13 @@ input[type=text]::-ms-clear { display: none; }
 
 .sec_subj::after { content: ''; display: inline-block; width: 65px; height: 4px; margin-left: 10px; background-color: #393939; }
 
-#homeCont { height: 50vh; background-color: #fee253; }
+#homeCont { height: 100vh; background-color: #fee253; }
 
 #homeCont .sec_inner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 100%; text-align: center; }
 
 #homeCont .sec_inner .txt { font-size: 36px; }
 
 #homeCont .sec_inner .name { font-weight: 700; font-size: 30px; }
-
-#careerCont { padding: 100px 0; background-color: #222; text-align: center; }
-
-#careerCont .sec_subj { color: #fff; }
-
-#careerCont .sec_cont { display: inline-block; }
-
-#careerCont .sec_cont_tit { float: left; font-size: 20px; color: #fff; letter-spacing: .03em; }
-
-#careerCont .sec_cont .career { text-align: left; }
-
-#careerCont .sec_cont .career_list { margin-left: 310px; }
-
-#careerCont .sec_cont .career_list li { font-size: 18px; color: #fff; line-height: 25px; letter-spacing: .02em; }
-
-#careerCont .sec_cont .career_list li span { font-size: 13px; color: #ccc; }
-
-#careerCont .sec_cont .career_list li .date { margin-right: 10px; }
-
-#careerCont .sec_cont .skill_list { margin: 45px 0 0 310px; }
-
-#careerCont .sec_cont .skill_list li { position: relative; width: 400px; height: 33px; margin-top: 13px; background-color: #ddd; border-radius: 5px; }
-
-#careerCont .sec_cont .skill_list li .bar { position: absolute; left: 0; top: 0; height: 100%; padding: 0px 10px; background-color: #ffb500; border-radius: 5px; font-weight: 600; font-size: 12px; line-height: 33px; letter-spacing: .05em; }
-
-#careerCont .sec_cont .skill_list li .bar .percent { padding: 0px 2px; font-size: 8px; }
 
 #portfolioCont { width: 100%; padding: 100px 0; }
 

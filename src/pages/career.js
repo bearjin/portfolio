@@ -4,9 +4,7 @@ import CareerContent from '../components/contents/careerContent';
 class Career extends Component {
     render() {
         return (
-            <section className="page_career">
-                <CareerContent />
-            </section>
+            <CareerContent />
         );
     }
 }

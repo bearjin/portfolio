@@ -1,10 +1,12 @@
 @import "./about";
+@import "./career";
 
 // common
 .sec {
     position: relative;
     width: 100%;
-    padding: 150px 0;
+    padding-top: 150px;
+    margin: 0 auto;
 
     &_inner {
         position: relative;
@@ -32,7 +34,7 @@
 
 // home
 #homeCont {
-    height: 50vh;
+    height: 100vh;
     background-color: #fee253;
 
     .sec_inner {
@@ -49,86 +51,6 @@
         .name {
             font-weight: 700;
             font-size: 30px;
-        }
-    }
-}
-
-// career
-#careerCont {
-    padding: 100px 0;
-    background-color: #222;
-    text-align: center;
-
-    .sec_subj {
-        color: #fff;
-    }
-
-    .sec_cont {
-        display: inline-block;
-
-        &_tit {
-            float: left;
-            font-size: 20px;
-            color: #fff;
-            letter-spacing: .03em;
-        }
-
-        .career {
-            text-align: left;
-
-            &_list {
-                margin-left: 310px;
-
-                li {
-                    font-size: 18px;
-                    color: #fff;
-                    line-height: 25px;
-                    letter-spacing: .02em;
-
-                    span {
-                        font-size: 13px;
-                        color: #ccc;
-                    }
-
-                    .date {
-                        margin-right: 10px;
-                    }
-                }
-            }
-        }
-
-        .skill {
-            &_list {
-                margin: 45px 0 0 310px;
-
-                li {
-                    position: relative;
-                    width: 400px;
-                    height: 33px;
-                    margin-top: 13px;
-                    background-color: #ddd;
-                    border-radius: 5px;
-
-                    .bar {
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        height: 100%;
-                        padding: 0px 10px;
-                        background-color: #ffb500;
-                        border-radius: 5px;
-                        font-weight: 600;
-                        font-size: 12px;
-                        line-height: 33px;
-                        letter-spacing: .05em;
-
-                        .percent {
-                            padding: 0px 2px;
-                            font-size: 8px;
-                        }
-                    }
-                }
-            }
         }
     }
 }
