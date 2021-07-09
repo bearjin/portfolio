@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import AboutContent from '../components/contents/AboutContent';
+import AboutContent from '../components/contents/aboutContent';
 
 class About extends Component {
     render() {
-        return(
-            <section className="page_about">
-                <AboutContent />
-            </section>
+        return (
+            <AboutContent />
         );
     }
 }

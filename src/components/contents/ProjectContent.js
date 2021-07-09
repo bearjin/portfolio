@@ -9,7 +9,7 @@ class ProjectContent extends Component {
                     <div className="portfolio">
                         <ul className="portfolio_list">
                             <li>
-                                <span className="frame" style={{backgroundImage : "url(/images/sample_01.jpg)"}}>
+                                <span className="frame" style={{ backgroundImage: "url(/images/sample_01.jpg)" }}>
                                     <a href="https://www.hwenc.co.kr/" className="link" target="_blank" title="새 창 열림" rel="noreferrer">한화건설 바로가기</a>
                                 </span>
                                 <div className="text">
@@ -20,7 +20,7 @@ class ProjectContent extends Component {
                                 </div>
                             </li>
                             <li>
-                                <span className="frame" style={{backgroundImage : "url(/images/sample_02.jpg)"}}>
+                                <span className="frame" style={{ backgroundImage: "url(/images/sample_02.jpg)" }}>
                                     <a href="http://www.kelim.net/" className="link" target="_blank" title="새 창 열림" rel="noreferrer">계림요업 바로가기</a>
                                 </span>
                                 <div className="text">

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Footer extends Component {
-    render () {
+    render() {
         return (
             <footer id="footer" className="footer">
                 <address>&copy; 2021 by Bearjin</address>

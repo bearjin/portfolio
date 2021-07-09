@@ -5,13 +5,13 @@ import {
     Route,
     Link
 } from "react-router-dom";
-import Main from '../../pages/Main';
-import About from '../../pages/About';
-import Career from '../../pages/Career';
-import Project from '../../pages/Project';
+import Main from '../../pages/main';
+import About from '../../pages/about';
+import Career from '../../pages/career';
+import Project from '../../pages/project';
 
 class Header extends Component {
-    render () {
+    render() {
         return (
             <Router>
                 <header id="header" className="header">

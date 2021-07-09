@@ -202,3 +202,7 @@ mark {
 input[type=text]::-ms-clear {
     display: none;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}

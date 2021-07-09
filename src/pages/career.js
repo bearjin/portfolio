@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import CareerContent from '../components/contents/CareerContent';
+import CareerContent from '../components/contents/careerContent';
 
 class Career extends Component {
     render() {
-        return(
+        return (
             <section className="page_career">
                 <CareerContent />
             </section>
