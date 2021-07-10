@@ -26,7 +26,7 @@ class AboutContent extends Component {
                                 <li className="item">
                                     <p className="name">HTML</p>
                                     <div className="info">
-                                        <div className="img"></div>
+                                        <div className="img"><img src="/images/html5.png" alt="img" /></div>
                                         <div className="rank">
                                             <span className="rank_meter"></span>
                                             <span className="rank_meter"></span>
