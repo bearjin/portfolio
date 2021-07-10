@@ -118,15 +118,37 @@ input[type=text]::-ms-clear { display: none; }
 
 .about_skill .skills .item + .item { margin-top: 10px; }
 
+.about_skill .skills .item[data-item="html"] .info .rank_meter.active { background-color: orange; }
+
+.about_skill .skills .item[data-item="css"] .info .rank_meter.active { background-color: royalblue; }
+
+.about_skill .skills .item[data-item="sass"] .info .rank_meter.active { background-color: palevioletred; }
+
+.about_skill .skills .item[data-item="js"] .info .rank_meter.active { background-color: yellow; }
+
+.about_skill .skills .item[data-item="jquery"] .info .rank_meter.active { background-color: mediumslateblue; }
+
+.about_skill .skills .item[data-item="react"] .info .rank_meter.active { background-color: mediumturquoise; }
+
+.about_skill .skills .item[data-item="git"] .info .rank_meter.active { background-color: black; }
+
+.about_skill .skills .item[data-item="photoshop"] .info .rank_meter.active { background-color: blue; }
+
 .about_skill .skills .item .name { margin-bottom: 10px; }
 
 .about_skill .skills .item .info { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.about_skill .skills .item .info .img { width: 40px; height: 40px; background-color: #000; }
+.about_skill .skills .item .info .img { width: 40px; height: 40px; }
+
+.about_skill .skills .item .info .img img { width: 100%; }
 
 .about_skill .skills .item .info .rank { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-left: 20px; }
 
-.about_skill .skills .item .info .rank_meter { display: inline-block; width: 16px; height: 16px; margin-left: 8px; border: 1px solid #000; border-radius: 50%; }
+.about_skill .skills .item .info .rank_meter { display: inline-block; width: 16px; height: 16px; margin-left: 8px; border: 1px solid #bcbcbc; border-radius: 50%; -webkit-transition: -webkit-transform .3s ease-in; transition: -webkit-transform .3s ease-in; transition: transform .3s ease-in; transition: transform .3s ease-in, -webkit-transform .3s ease-in; }
+
+.about_skill .skills .item .info .rank_meter.active { background-color: #000; border: none; }
+
+.about_skill .skills .item .info .rank_meter.active:hover { -webkit-transform: scale(1.2); transform: scale(1.2); }
 
 .career { max-width: 800px; }
 
