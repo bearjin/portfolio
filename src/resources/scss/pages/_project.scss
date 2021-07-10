@@ -13,7 +13,7 @@
             margin: 0 10px 30px 10px;
             cursor: pointer;
 
-            &:hover .img .icon {
+            &:hover .img img {
                 transform: translate(-50%, -50%) scale(1.2);
             }
 
@@ -22,16 +22,13 @@
                 width: 100%;
                 height: 150px;
                 margin-bottom: 10px;
-                border: 1px solid #000;
+                background-color: lightgray;
                 border-radius: 20px;
 
-                .icon {
+                img {
                     position: absolute;
                     left: 50%;
                     top: 50%;
-                    width: 50px;
-                    height: 50px;
-                    background-color: #000;
                     transform: translate(-50%, -50%);
                     transition: transform .5s ease-in;
                 }
