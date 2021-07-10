@@ -1,0 +1,22 @@
+// home
+.home {
+    height: 100vh;
+    background-color: #fee253;
+
+    .sec_inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        text-align: center;
+
+        .txt {
+            font-size: 36px;
+        }
+
+        .name {
+            font-weight: 700;
+            font-size: 30px;
+        }
+    }
+}

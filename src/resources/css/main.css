@@ -88,6 +88,14 @@ input[type=text]::-ms-clear { display: none; }
 
 .footer address { font-size: 12px; color: #7a7a7a; text-align: center; line-height: 60px; }
 
+.home { height: 100vh; background-color: #fee253; }
+
+.home .sec_inner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 100%; text-align: center; }
+
+.home .sec_inner .txt { font-size: 36px; }
+
+.home .sec_inner .name { font-weight: 700; font-size: 30px; }
+
 .about { max-width: 800px; }
 
 .about_intro { margin-bottom: 50px; }
@@ -122,7 +130,49 @@ input[type=text]::-ms-clear { display: none; }
 
 .career { max-width: 800px; }
 
+.career_detail_intro { padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #000; }
+
+.career_detail_profile { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 20px; }
+
+.career_detail_profile .profile_img { width: 200px; height: 200px; background-color: #000; }
+
+.career_detail_profile .profile_info { margin-left: 30px; }
+
+.career_detail_profile .profile_info .tit { font-weight: 600; font-size: 30px; }
+
+.career_detail_profile .profile_info .year { font-size: 20px; }
+
+.career_detail_profile .profile_info .role { font-size: 22px; }
+
+.career_project_list .item { margin-bottom: 10px; }
+
+.career_project_list .item .name { position: relative; padding-left: 15px; font-weight: 600; }
+
+.career_project_list .item .name::before { content: ''; position: absolute; left: 0; top: 7px; width: 4px; height: 18px; background-color: #000; }
+
+.career_project_list .item .list { padding-left: 10px; }
+
+.career_project_list .item .list .sub_item { position: relative; padding-left: 15px; }
+
+.career_project_list .item .list .sub_item::before { content: ''; position: absolute; left: 0; top: 50%; width: 8px; height: 1px; background-color: #000; }
+
 .project { max-width: 800px; }
+
+.project_list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.project_list .item { width: 100%; max-width: calc((100% / 3) - 20px); margin: 0 10px 30px 10px; cursor: pointer; }
+
+.project_list .item:hover .img .icon { -webkit-transform: translate(-50%, -50%) scale(1.2); transform: translate(-50%, -50%) scale(1.2); }
+
+.project_list .item .img { position: relative; width: 100%; height: 150px; margin-bottom: 10px; border: 1px solid #000; border-radius: 20px; }
+
+.project_list .item .img .icon { position: absolute; left: 50%; top: 50%; width: 50px; height: 50px; background-color: #000; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-transition: -webkit-transform .5s ease-in; transition: -webkit-transform .5s ease-in; transition: transform .5s ease-in; transition: transform .5s ease-in, -webkit-transform .5s ease-in; }
+
+.project_list .item .subj { font-size: 16px; }
+
+.project_list .item .role { font-weight: 300; font-size: 12px; color: #666; }
+
+.project_list .item .date { font-weight: 300; font-size: 12px; color: #666; }
 
 .sec { position: relative; width: 100%; padding-top: 150px; margin: 0 auto; }
 
@@ -131,27 +181,3 @@ input[type=text]::-ms-clear { display: none; }
 .sec_subj { position: relative; margin-bottom: 50px; font-weight: 700; font-size: 32px; font-style: italic; }
 
 .sec_subj::after { content: ''; display: inline-block; width: 65px; height: 4px; margin-left: 10px; background-color: #393939; }
-
-.card_type_list { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-
-.card_type_list .item { width: 100%; max-width: calc((100% / 3) - 20px); margin: 0 10px 30px 10px; cursor: pointer; }
-
-.card_type_list .item:hover .img .icon { -webkit-transform: translate(-50%, -50%) scale(1.2); transform: translate(-50%, -50%) scale(1.2); }
-
-.card_type_list .item .img { position: relative; width: 100%; height: 150px; margin-bottom: 10px; border: 1px solid #000; border-radius: 20px; }
-
-.card_type_list .item .img .icon { position: absolute; left: 50%; top: 50%; width: 50px; height: 50px; background-color: #000; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); -webkit-transition: -webkit-transform .5s ease-in; transition: -webkit-transform .5s ease-in; transition: transform .5s ease-in; transition: transform .5s ease-in, -webkit-transform .5s ease-in; }
-
-.card_type_list .item .subj { font-size: 16px; }
-
-.card_type_list .item .role { font-weight: 300; font-size: 12px; color: #666; }
-
-.card_type_list .item .date { font-weight: 300; font-size: 12px; color: #666; }
-
-#homeCont { height: 100vh; background-color: #fee253; }
-
-#homeCont .sec_inner { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 100%; text-align: center; }
-
-#homeCont .sec_inner .txt { font-size: 36px; }
-
-#homeCont .sec_inner .name { font-weight: 700; font-size: 30px; }

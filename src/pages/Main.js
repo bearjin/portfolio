@@ -10,8 +10,8 @@ class Main extends Component {
             <div>
                 <HomeContent />
                 <AboutContent />
-                <CareerContent />
                 <ProjectContent />
+                <CareerContent />
             </div>
         );
     }

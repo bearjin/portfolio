@@ -1,4 +1,83 @@
 // career
 .career {
     max-width: 800px;
+
+    &_detail {
+        &_intro {
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #000;
+        }
+
+        &_profile {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            .profile_img {
+                width: 200px;
+                height: 200px;
+                background-color: #000;
+            }
+
+            .profile_info {
+                margin-left: 30px;
+
+                .tit {
+                    font-weight: 600;
+                    font-size: 30px;
+                }
+
+                .year {
+                    font-size: 20px;
+                }
+
+                .role {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    &_project_list {
+
+        .item {
+            margin-bottom: 10px;
+
+            .name {
+                position: relative;
+                padding-left: 15px;
+                font-weight: 600;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 7px;
+                    width: 4px;
+                    height: 18px;
+                    background-color: #000;
+                }
+            }
+
+            .list {
+                padding-left: 10px;
+
+                .sub_item {
+                    position: relative;
+                    padding-left: 15px;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        width: 8px;
+                        height: 1px;
+                        background-color: #000;
+                    }
+                }
+            }
+        }
+    }
 }
