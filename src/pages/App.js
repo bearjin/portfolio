@@ -11,6 +11,7 @@ import About from './about/about';
 import Career from './career/career';
 import Project from './project/project';
 import onlineShop from './project/detail/onlineShop';
+import hanWha from './project/detail/hanWha';
 
 class App extends Component {
     render() {
@@ -24,6 +25,7 @@ class App extends Component {
                         <Route exact path="/career" component={Career} />
                         <Route exact path="/project" component={Project} />
                         <Route exact path="/project/onlineShop" component={onlineShop} />
+                        <Route exact path="/project/hanWha" component={hanWha} />
                     </Switch>
                 </Router>
                 <Footer />
