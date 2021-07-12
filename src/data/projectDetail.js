@@ -28,13 +28,65 @@ const projectDetailData = {
             관리자로 연동되는 페이지들이 많아 관리자에서 입력한 내용들이 틀어지지 않고 나오도록 주의해서 코딩했습니다.
             `
         ],
-        'tech': 'HTML, CSS, Javascript, jQuery, YouTube API, Swiper.js',
+        'tech': 'HTML, CSS, Javascript, jQuery, YouTube API, Swiper API',
         'link': 'https://www.hwenc.co.kr/',
         'role': [
             `페이지 제작(HTML, CSS) : 메인페이지(100%), 서브페이지 : 회사소개(100%), 사업분야(30%), 지속가능경영(85%), 홍보센터(100%), 고객센터(100%)`,
-            `페이지 기능(Javascript, jQuery, YouTube API, Swiper.js) : 메인페이지(100%), 서브페이지 : 회사소개(100%), 사업분야(10%), 지속가능경영(85%), 홍보센터(100%), 고객센터(100%)`
+            `페이지 기능(Javascript, jQuery, YouTube API, Swiper API) : 메인페이지(100%), 서브페이지 : 회사소개(100%), 사업분야(10%), 지속가능경영(85%), 홍보센터(100%), 고객센터(100%)`
         ]
-    }
+    },
+    'onlineSale': {
+        'subj': '쉐보레 온라인 구매 예약',
+        'img': 'online_sales',
+        'txt': [
+            `고객들이 오프라인 전시장을 방문하지 않고 온라인을 통해 원하는 쉐보레 차량 모델을 선택해 트림, 외관, 실내 옵션들을 선택해보고 구매 예약까지 비대면으로 제공하는 서비스 입니다.`,
+            `모델 구성하기 페이지를 담당해서 제작했었고 처음으로 직접 개발팀과 조율해 데이터 구조를 정해보고 많은 데이터를 활용해 화면을 구성하는 업무를 제대로 해볼 수 있었고,
+            sessionStorage를 통한 데이터 보관 및 활용도 접해보며 많이 배울 수 있었습니다. 차량 이미지를 표현하고 옵션은 또 어떻게 표현해야 될지에 대해 디자인팀, 기획팀과 많은 고민을 하고 조율해 
+            옵션(트림, 색상 등등)별로 코드를 정하고 옵션 코드에 따라 이미지명을 조합해 이미지가 변경되고 옵션이 표현되게 제작 할 수 있었습니다. 
+            협업에서 커뮤니케이션의 중요성을 다시 한번 느끼고 배우며 능력을 기를수 있었습니다.
+            `
+        ],
+        'tech': 'HTML, CSS, Javascript, jQuery, Ajax, Swiper API',
+        'link': 'https://www.chevrolet.co.kr/purchase/estimate-online.gm',
+        'role': [
+            `페이지 제작(HTML, CSS) : 인덱스, 모델 구성하기(100%)`,
+            `페이지 기능(Javascript, jQuery, Ajax, Swiper API) : 인덱스, 모델 구성하기(100%)`
+        ]
+    },
+    'kelim': {
+        'subj': '계림요업',
+        'img': 'kelim',
+        'txt': [
+            `기존 계림요업 사이트 리뉴얼 프로젝트로 저를 포함 2명이서 프로젝트를 진행하였습니다. 다양한 제품을 소개하고 기업을 소개할 수 있는 사이트로 제작되었습니다.`,
+            `메인 페이지를 영상들을 Video API(WEB API)를 활용해 슬라이드처럼 동작하도록 만들었고, 
+            홍보센터 서브페이지에서 Swiper API 활용해 다양한 슬라이드를 제작해보며 API를 활용하는 방법과 공식문서를 보는법을 더 익히게 되었습니다.
+            `
+        ],
+        'tech': 'HTML, CSS, Javascript, jQuery, Swiper API',
+        'link': 'http://www.kelim.net/',
+        'role': [
+            `페이지 제작(HTML, CSS) : 메인페이지(100%), 서브페이지 : 회사소개(100%), 홍보센터(100%), 고객센터(50%)`,
+            `페이지 기능(Javascript, jQuery, Swiper API) : 메인페이지(100%), 서브페이지 : 회사소개(100%), 홍보센터(100%)`
+        ]
+    },
+    'kyungNam': {
+        'subj': '경남 아너스빌 분양(송추)',
+        'img': 'kyungnam',
+        'txt': [
+            `경남 아너스빌 분양(송추) 사이트 혼자 담당해 반응형으로 제작이 되었고, 프로젝트 당시 제작일정이 많이 부족했습니다.
+            기획팀, 디자인팀과 태블릿, 모바일로 변경 될 시 레이아웃이 밑으로 한단씩 내려가는 최대한 간단한 구조로 조율해 반응형이 적용되도록 조율 했고
+            일정에 맞춰 진행될 수 있었습니다.
+            `,
+            `이번 프로젝트를 통해 반응형에 대해 다시 한번 개념을 정리 할 수 있었고, 혼자서 일정 관리 및 작업을 진행하며 프로젝트를 전반적으로 관리하고
+            타팀과 협의하는 능력을 키울 수 있어 많은 도움이 되었습니다.`
+        ],
+        'tech': 'HTML, CSS, Javascript, jQuery, Swiper API',
+        'link': 'https://bukhansan.honorsville.co.kr/',
+        'role': [
+            `페이지 제작(HTML, CSS) : 메인페이지(100%), 서브페이지(100%)`,
+            `페이지 기능(Javascript, jQuery, Swiper API) : 메인페이지(100%), 서브페이지(100%)`
+        ]
+    },
 }
 
 export default projectDetailData;

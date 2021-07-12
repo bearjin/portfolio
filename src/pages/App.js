@@ -10,8 +10,11 @@ import Main from './main';
 import About from './about/about';
 import Career from './career/career';
 import Project from './project/project';
-import onlineShop from './project/detail/onlineShop';
-import hanWha from './project/detail/hanWha';
+import OnlineShop from './project/detail/onlineShop';
+import HanWha from './project/detail/hanWha';
+import OnlineSale from './project/detail/onlineSale';
+import Kelim from './project/detail/kelim';
+import KyungNam from './project/detail/kyungNam';
 
 class App extends Component {
     render() {
@@ -24,8 +27,11 @@ class App extends Component {
                         <Route exact path="/about" component={About} />
                         <Route exact path="/career" component={Career} />
                         <Route exact path="/project" component={Project} />
-                        <Route exact path="/project/onlineShop" component={onlineShop} />
-                        <Route exact path="/project/hanWha" component={hanWha} />
+                        <Route exact path="/project/onlineShop" component={OnlineShop} />
+                        <Route exact path="/project/hanWha" component={HanWha} />
+                        <Route exact path="/project/onlineSale" component={OnlineSale} />
+                        <Route exact path="/project/kelim" component={Kelim} />
+                        <Route exact path="/project/kyungnam" component={KyungNam} />
                     </Switch>
                 </Router>
                 <Footer />

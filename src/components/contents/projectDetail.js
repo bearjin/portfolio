@@ -39,7 +39,7 @@ class ProjectDetail extends Component {
                 <div className="project_detail_list">
                     <ul className="list">
                         <li className="item">
-                            사용기술 : <span>${this.state.data.tech}</span>
+                            사용기술 : <span>{this.state.data.tech}</span>
                         </li>
                         <li className="item">
                             링크 : <a className="link" href={this.state.data.link} target="_blank" rel="noreferrer">{this.state.data.link}</a>
