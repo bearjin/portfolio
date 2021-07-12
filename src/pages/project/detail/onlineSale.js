@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import ProjectDetail from '../../../components/contents/ProjectDetail';
-import ProjectDetailData from '../../../data/projectDetail';
+import ProjectDetailData from '../../../data/ProjectDetail';
 
-class onlineSale extends Component {
+class OnlineSale extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: ProjectDetailData['onlineSale'],
+            data: ProjectDetailData['OnlineSale'],
         }
     }
 
@@ -17,4 +17,4 @@ class onlineSale extends Component {
     }
 }
 
-export default onlineSale;
+export default OnlineSale;

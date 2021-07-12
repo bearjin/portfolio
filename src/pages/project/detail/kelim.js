@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import ProjectDetail from '../../../components/contents/ProjectDetail';
-import ProjectDetailData from '../../../data/projectDetail';
+import ProjectDetailData from '../../../data/ProjectDetail';
 
 class Kelim extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: ProjectDetailData['kelim'],
+            data: ProjectDetailData['Kelim'],
         }
     }
 

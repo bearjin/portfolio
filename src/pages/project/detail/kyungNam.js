@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import ProjectDetail from '../../../components/contents/ProjectDetail';
-import ProjectDetailData from '../../../data/projectDetail';
+import ProjectDetailData from '../../../data/ProjectDetail';
 
-class KyungNam extends Component {
+class Kyungnam extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: ProjectDetailData['kyungNam'],
+            data: ProjectDetailData['Kyungnam'],
         }
     }
 
@@ -17,4 +17,4 @@ class KyungNam extends Component {
     }
 }
 
-export default KyungNam;
+export default Kyungnam;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CareerDetail from './careerDetail';
+import CareerDetail from './CareerDetail';
 
 class CareerContent extends Component {
     render() {

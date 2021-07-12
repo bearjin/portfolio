@@ -1,5 +1,5 @@
 const projectDetailData = {
-    'onlineShop': {
+    'OnlineShop': {
         'subj': '쉐보레 온라인 샵',
         'img': 'online_shop',
         'txt': [
@@ -19,7 +19,7 @@ const projectDetailData = {
             `페이지 기능(Javascript, jQuery, Ajax) : 인덱스, 차량 선택, 차량 주문 (80%)`
         ]
     },
-    'hanWha': {
+    'Hanwha': {
         'subj': '한화건설',
         'img': 'hanwha',
         'txt': [
@@ -35,7 +35,7 @@ const projectDetailData = {
             `페이지 기능(Javascript, jQuery, YouTube API, Swiper API) : 메인페이지(100%), 서브페이지 : 회사소개(100%), 사업분야(10%), 지속가능경영(85%), 홍보센터(100%), 고객센터(100%)`
         ]
     },
-    'onlineSale': {
+    'OnlineSale': {
         'subj': '쉐보레 온라인 구매 예약',
         'img': 'online_sales',
         'txt': [
@@ -53,7 +53,7 @@ const projectDetailData = {
             `페이지 기능(Javascript, jQuery, Ajax, Swiper API) : 인덱스, 모델 구성하기(100%)`
         ]
     },
-    'kelim': {
+    'Kelim': {
         'subj': '계림요업',
         'img': 'kelim',
         'txt': [
@@ -69,8 +69,44 @@ const projectDetailData = {
             `페이지 기능(Javascript, jQuery, Swiper API) : 메인페이지(100%), 서브페이지 : 회사소개(100%), 홍보센터(100%)`
         ]
     },
-    'kyungNam': {
+    'Kyungnam': {
         'subj': '경남 아너스빌 분양(송추)',
+        'img': 'kyungnam',
+        'txt': [
+            `경남 아너스빌 분양(송추) 사이트 혼자 담당해 반응형으로 제작이 되었고, 프로젝트 당시 제작일정이 많이 부족했습니다.
+            기획팀, 디자인팀과 태블릿, 모바일로 변경 될 시 레이아웃이 밑으로 한단씩 내려가는 최대한 간단한 구조로 조율해 반응형이 적용되도록 조율 했고
+            일정에 맞춰 진행될 수 있었습니다.
+            `,
+            `이번 프로젝트를 통해 반응형에 대해 다시 한번 개념을 정리 할 수 있었고, 혼자서 일정 관리 및 작업을 진행하며 프로젝트를 전반적으로 관리하고
+            타팀과 협의하는 능력을 키울 수 있어 많은 도움이 되었습니다.`
+        ],
+        'tech': 'HTML, CSS, Javascript, jQuery, Swiper API',
+        'link': 'https://bukhansan.honorsville.co.kr/',
+        'role': [
+            `페이지 제작(HTML, CSS) : 메인페이지(100%), 서브페이지(100%)`,
+            `페이지 기능(Javascript, jQuery, Swiper API) : 메인페이지(100%), 서브페이지(100%)`
+        ]
+    },
+    'Jaseng': {
+        'subj': '자생의료재단',
+        'img': 'kyungnam',
+        'txt': [
+            `경남 아너스빌 분양(송추) 사이트 혼자 담당해 반응형으로 제작이 되었고, 프로젝트 당시 제작일정이 많이 부족했습니다.
+            기획팀, 디자인팀과 태블릿, 모바일로 변경 될 시 레이아웃이 밑으로 한단씩 내려가는 최대한 간단한 구조로 조율해 반응형이 적용되도록 조율 했고
+            일정에 맞춰 진행될 수 있었습니다.
+            `,
+            `이번 프로젝트를 통해 반응형에 대해 다시 한번 개념을 정리 할 수 있었고, 혼자서 일정 관리 및 작업을 진행하며 프로젝트를 전반적으로 관리하고
+            타팀과 협의하는 능력을 키울 수 있어 많은 도움이 되었습니다.`
+        ],
+        'tech': 'HTML, CSS, Javascript, jQuery, Swiper API',
+        'link': 'https://bukhansan.honorsville.co.kr/',
+        'role': [
+            `페이지 제작(HTML, CSS) : 메인페이지(100%), 서브페이지(100%)`,
+            `페이지 기능(Javascript, jQuery, Swiper API) : 메인페이지(100%), 서브페이지(100%)`
+        ]
+    },
+    'Daewoo': {
+        'subj': '대우건설',
         'img': 'kyungnam',
         'txt': [
             `경남 아너스빌 분양(송추) 사이트 혼자 담당해 반응형으로 제작이 되었고, 프로젝트 당시 제작일정이 많이 부족했습니다.

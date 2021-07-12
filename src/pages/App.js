@@ -4,17 +4,19 @@ import {
     Switch,
     Route,
 } from "react-router-dom";
-import Header from '../components/structure/header';
-import Footer from '../components/structure/footer';
-import Main from './main';
-import About from './about/about';
-import Career from './career/career';
-import Project from './project/project';
-import OnlineShop from './project/detail/onlineShop';
-import HanWha from './project/detail/hanWha';
-import OnlineSale from './project/detail/onlineSale';
-import Kelim from './project/detail/kelim';
-import KyungNam from './project/detail/kyungNam';
+import Header from '../components/structure/Header';
+import Footer from '../components/structure/Footer';
+import Main from './Main';
+import About from './about/About';
+import Career from './career/Career';
+import Project from './project/Project';
+import OnlineShop from './project/detail/OnlineShop';
+import Hanwha from './project/detail/Hanwha';
+import OnlineSale from './project/detail/OnlineSale';
+import Kelim from './project/detail/Kelim';
+import Kyungnam from './project/detail/Kyungnam';
+import Jaseng from './project/detail/Jaseng';
+import Daewoo from './project/detail/Daewoo';
 
 class App extends Component {
     render() {
@@ -28,10 +30,12 @@ class App extends Component {
                         <Route exact path="/career" component={Career} />
                         <Route exact path="/project" component={Project} />
                         <Route exact path="/project/onlineShop" component={OnlineShop} />
-                        <Route exact path="/project/hanWha" component={HanWha} />
+                        <Route exact path="/project/hanwha" component={Hanwha} />
                         <Route exact path="/project/onlineSale" component={OnlineSale} />
                         <Route exact path="/project/kelim" component={Kelim} />
-                        <Route exact path="/project/kyungnam" component={KyungNam} />
+                        <Route exact path="/project/kyungnam" component={Kyungnam} />
+                        <Route exact path="/project/jaseng" component={Jaseng} />
+                        <Route exact path="/project/daewoo" component={Daewoo} />
                     </Switch>
                 </Router>
                 <Footer />
