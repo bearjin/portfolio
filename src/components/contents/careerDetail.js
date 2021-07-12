@@ -6,7 +6,7 @@ class CareerDetail extends Component {
             <section className="career_detail">
                 <div className="career_detail_intro">
                     <div className="career_detail_profile">
-                        <div className="profile_img" style={{ backgroundImage: `url(${require("../../resources/images/uber.png").default})` }}></div>
+                        <div className="profile_img" style={{ backgroundImage: `url(${require("../../resources/images/career/uber.png").default})` }}></div>
                         <div className="profile_info">
                             <p className="tit">더위버크리에이티브</p>
                             <p className="year">2017.10 ~ 2021.06 (3년 8개월)</p>

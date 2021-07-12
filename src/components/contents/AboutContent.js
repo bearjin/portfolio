@@ -26,7 +26,7 @@ class AboutContent extends Component {
                                 <li className="item" data-item="html">
                                     <p className="name">HTML</p>
                                     <div className="info">
-                                        <div className="img"><img src={require('../../resources/images/html5.png').default} alt="img" /></div>
+                                        <div className="img"><img src={require('../../resources/images/about/html5.png').default} alt="img" /></div>
                                         <div className="rank">
                                             <span className="rank_meter active"></span>
                                             <span className="rank_meter active"></span>
@@ -44,7 +44,7 @@ class AboutContent extends Component {
                                 <li className="item" data-item="css">
                                     <p className="name">CSS</p>
                                     <div className="info">
-                                        <div className="img"><img src={require('../../resources/images/css3.png').default} alt="img" /></div>
+                                        <div className="img"><img src={require('../../resources/images/about/css3.png').default} alt="img" /></div>
                                         <div className="rank">
                                             <span className="rank_meter active"></span>
                                             <span className="rank_meter active"></span>
@@ -62,7 +62,7 @@ class AboutContent extends Component {
                                 <li className="item" data-item="sass">
                                     <p className="name">Sass</p>
                                     <div className="info">
-                                        <div className="img"><img src={require('../../resources/images/sass.png').default} alt="img" /></div>
+                                        <div className="img"><img src={require('../../resources/images/about/sass.png').default} alt="img" /></div>
                                         <div className="rank">
                                             <span className="rank_meter active"></span>
                                             <span className="rank_meter active"></span>
@@ -80,7 +80,7 @@ class AboutContent extends Component {
                                 <li className="item" data-item="js">
                                     <p className="name">Javascript</p>
                                     <div className="info">
-                                        <div className="img"><img src={require('../../resources/images/js.png').default} alt="img" /></div>
+                                        <div className="img"><img src={require('../../resources/images/about/js.png').default} alt="img" /></div>
                                         <div className="rank">
                                             <span className="rank_meter active"></span>
                                             <span className="rank_meter active"></span>
@@ -98,7 +98,7 @@ class AboutContent extends Component {
                                 <li className="item" data-item="jquery">
                                     <p className="name">jQuery</p>
                                     <div className="info">
-                                        <div className="img"><img src={require('../../resources/images/jquery.png').default} alt="img" /></div>
+                                        <div className="img"><img src={require('../../resources/images/about/jquery.png').default} alt="img" /></div>
                                         <div className="rank">
                                             <span className="rank_meter active"></span>
                                             <span className="rank_meter active"></span>
@@ -116,7 +116,7 @@ class AboutContent extends Component {
                                 <li className="item" data-item="react">
                                     <p className="name">React.js</p>
                                     <div className="info">
-                                        <div className="img"><img src={require('../../resources/images/react.png').default} alt="img" /></div>
+                                        <div className="img"><img src={require('../../resources/images/about/react.png').default} alt="img" /></div>
                                         <div className="rank">
                                             <span className="rank_meter active"></span>
                                             <span className="rank_meter active"></span>
@@ -139,7 +139,7 @@ class AboutContent extends Component {
                                 <li className="item" data-item="git">
                                     <p className="name">Git</p>
                                     <div className="info">
-                                        <div className="img"><img src={require('../../resources/images/git.png').default} alt="img" /></div>
+                                        <div className="img"><img src={require('../../resources/images/about/git.png').default} alt="img" /></div>
                                         <div className="rank">
                                             <span className="rank_meter active"></span>
                                             <span className="rank_meter active"></span>
@@ -157,7 +157,7 @@ class AboutContent extends Component {
                                 <li className="item" data-item="photoshop">
                                     <p className="name">Photoshop</p>
                                     <div className="info">
-                                        <div className="img"><img src={require('../../resources/images/photoshop.png').default} alt="img" /></div>
+                                        <div className="img"><img src={require('../../resources/images/about/photoshop.png').default} alt="img" /></div>
                                         <div className="rank">
                                             <span className="rank_meter active"></span>
                                             <span className="rank_meter active"></span>
