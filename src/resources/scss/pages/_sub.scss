@@ -5,14 +5,11 @@
 
 // common
 .sec {
-    position: relative;
     width: 100%;
     padding-top: 150px;
     margin: 0 auto;
 
     &_inner {
-        position: relative;
-        z-index: 1;
         padding: 0 25px;
     }
 

@@ -15,6 +15,11 @@
     }
 }
 
+.container {
+    position: relative;
+    z-index: 2;
+}
+
 /* header */
 .header {
     position: fixed;
@@ -62,6 +67,7 @@
                 text-align: center;
 
                 .depth1_link {
+                    font-weight: 600;
                     font-size: 20px;
                     color: #000;
                 }

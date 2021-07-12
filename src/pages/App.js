@@ -6,22 +6,24 @@ import {
 } from "react-router-dom";
 import Header from '../components/structure/header';
 import Footer from '../components/structure/footer';
-import Main from '../pages/main';
-import AboutContent from '../components/contents/aboutContent';
-import CareerContent from '../components/contents/careerContent';
-import ProjectContent from '../components/contents/projectContent';
+import Main from './main';
+import About from './about/about';
+import Career from './career/career';
+import Project from './project/project';
+import onlineShop from './project/detail/onlineShop';
 
 class App extends Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 <Header />
                 <Router>
                     <Switch>
                         <Route exact path="/portfolio" component={Main} />
-                        <Route exact path="/about" component={AboutContent} />
-                        <Route exact path="/career" component={CareerContent} />
-                        <Route exact path="/project" component={ProjectContent} />
+                        <Route exact path="/about" component={About} />
+                        <Route exact path="/career" component={Career} />
+                        <Route exact path="/project" component={Project} />
+                        <Route exact path="/project/onlineShop" component={onlineShop} />
                     </Switch>
                 </Router>
                 <Footer />
