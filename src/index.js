@@ -8,10 +8,10 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/portfolio">
       <App />
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode >,
   document.getElementById('root')
 );
 
