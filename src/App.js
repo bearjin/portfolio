@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-} from "react-router-dom";
+import { Switch, Route } from 'react-router-dom';
 import Header from './components/structure/Header';
 import Footer from './components/structure/Footer';
 import Main from './pages/main';
@@ -23,21 +19,19 @@ class App extends Component {
         return (
             <div className="container">
                 <Header />
-                <Router>
-                    <Switch>
-                        <Route exact path="/portfolio" component={Main} />
-                        <Route exact path="/about" component={About} />
-                        <Route exact path="/career" component={Career} />
-                        <Route exact path="/project" component={Project} />
-                        <Route exact path="/project/onlineShop" component={OnlineShop} />
-                        <Route exact path="/project/hanwha" component={Hanwha} />
-                        <Route exact path="/project/onlineSale" component={OnlineSale} />
-                        <Route exact path="/project/kelim" component={Kelim} />
-                        <Route exact path="/project/kyungnam" component={Kyungnam} />
-                        <Route exact path="/project/jaseng" component={Jaseng} />
-                        <Route exact path="/project/daewoo" component={Daewoo} />
-                    </Switch>
-                </Router>
+                <Switch>
+                    <Route exact path="/portfolio" component={Main} />
+                    <Route exact path="/about" component={About} />
+                    <Route exact path="/career" component={Career} />
+                    <Route exact path="/project" component={Project} />
+                    <Route exact path="/project/onlineShop" component={OnlineShop} />
+                    <Route exact path="/project/hanwha" component={Hanwha} />
+                    <Route exact path="/project/onlineSale" component={OnlineSale} />
+                    <Route exact path="/project/kelim" component={Kelim} />
+                    <Route exact path="/project/kyungnam" component={Kyungnam} />
+                    <Route exact path="/project/jaseng" component={Jaseng} />
+                    <Route exact path="/project/daewoo" component={Daewoo} />
+                </Switch>
                 <Footer />
             </div>
         );
