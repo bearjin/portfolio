@@ -9,9 +9,9 @@ class Header extends Component {
                     <button className="btn-gnb">MENU</button>
                     <nav id="gnb" className="gnb_wrap">
                         <ul className="gnb_inner">
-                            <li className="depth1"><a className="depth1_link" href="/portfolio/About">About</a></li>
-                            <li className="depth1"><a className="depth1_link" href="/portfolio/Project">Project</a></li>
-                            <li className="depth1"><a className="depth1_link" href="/portfolio/Career">Career</a></li>
+                            <li className="depth1"><a className="depth1_link" href="/portfolio/about">About</a></li>
+                            <li className="depth1"><a className="depth1_link" href="/portfolio/project">Project</a></li>
+                            <li className="depth1"><a className="depth1_link" href="/portfolio/career">Career</a></li>
                             <li className="depth1"><a className="depth1_link" href="https://bearjin.github.io/" target="_blank" rel="noreferrer">Blog</a></li>
                         </ul>
                     </nav>
