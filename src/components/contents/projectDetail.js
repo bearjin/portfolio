@@ -31,8 +31,8 @@ class ProjectDetail extends Component {
 
     render() {
         return (
-            <section className="project_detail">
-                <a className="project_detail_back" href="/portfolio/project" style={{ backgroundImage: `url(${MenuIcon})` }} title="목록으로">목록으로</a>
+            <section className="sec project_detail">
+                <a className="project_detail_back" href="#/project" style={{ backgroundImage: `url(${MenuIcon})` }} title="목록으로">목록으로</a>
                 <h2 className="project_detail_tit">{this.state.data.subj}</h2>
                 <div className="project_detail_img">
                     <img src={require(`../../resources/images/project/detail/${this.state.data.img}.jpg`).default} alt="img"></img>

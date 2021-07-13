@@ -8,6 +8,7 @@
     width: 100%;
     padding-top: 150px;
     margin: 0 auto;
+    transition: all .6s ease;
 
     &_inner {
         padding: 0 25px;
@@ -29,4 +30,9 @@
             background-color: #393939;
         }
     }
+}
+
+.page-enter {
+    opacity: 0;
+    transform: translateY(-50px);
 }
