@@ -12,7 +12,7 @@ class ProjectDetail extends Component {
         const txtList = this.state.data.txt.map((elm) => {
             return (
                 <p className="txt">{elm}</p>
-            )
+            );
         });
 
         return txtList;
@@ -22,7 +22,7 @@ class ProjectDetail extends Component {
         const roleList = this.state.data.role.map((elm) => {
             return (
                 <li className="list">{elm}</li>
-            )
+            );
         });
 
         return roleList;
@@ -51,7 +51,7 @@ class ProjectDetail extends Component {
                     </ul>
                 </div>
             </section>
-        )
+        );
     }
 }
 
