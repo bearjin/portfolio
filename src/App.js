@@ -2,17 +2,17 @@ import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Header from './components/structure/Header';
 import Footer from './components/structure/Footer';
-import Main from './pages/main';
-import About from './pages/about';
-import Career from './pages/career';
-import Project from './pages/project';
-import OnlineShop from './pages/project/onlineShop';
-import Hanwha from './pages/project/hanwha';
-import OnlineSale from './pages/project/onlineSale';
-import Kelim from './pages/project/kelim';
-import Kyungnam from './pages/project/kyungnam';
-import Jaseng from './pages/project/jaseng';
-import Daewoo from './pages/project/daewoo';
+import Main from './pages/Main';
+import About from './pages/About';
+import Career from './pages/Career';
+import Project from './pages/Project';
+import OnlineShop from './pages/project/OnlineShop';
+import Hanwha from './pages/project/Hanwha';
+import OnlineSale from './pages/project/OnlineSale';
+import Kelim from './pages/project/Kelim';
+import Kyungnam from './pages/project/Kyungnam';
+import Jaseng from './pages/project/Jaseng';
+import Daewoo from './pages/project/Daewoo';
 
 class App extends Component {
     render() {
