@@ -17,6 +17,7 @@ class AboutContent extends Component {
                         <ul className="links">
                             <a className="link" href="https://github.com/bearjin" target="_blank" rel="noreferrer">Github</a>
                             <a className="link" href="https://bearjin.github.io" target="_blank" rel="noreferrer">Blog</a>
+                            <a className="link" href="https://bearjin.github.io/portfolio" target="_blank" rel="noreferrer">Portfolio</a>
                         </ul>
                     </div>
                     <div className="about_skill">
