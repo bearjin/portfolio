@@ -7,16 +7,16 @@ import {
 import Header from './components/structure/Header';
 import Footer from './components/structure/Footer';
 import Main from './pages/main';
-import About from './pages/about/about';
-import Career from './pages/career/career';
-import Project from './pages/project/project';
-import OnlineShop from './pages/project/detail/onlineShop';
-import Hanwha from './pages/project/detail/hanwha';
-import OnlineSale from './pages/project/detail/onlineSale';
-import Kelim from './pages/project/detail/kelim';
-import Kyungnam from './pages/project/detail/kyungnam';
-import Jaseng from './pages/project/detail/jaseng';
-import Daewoo from './pages/project/detail/daewoo';
+import About from './pages/about';
+import Career from './pages/career';
+import Project from './pages/project';
+import OnlineShop from './pages/project/onlineShop';
+import Hanwha from './pages/project/hanwha';
+import OnlineSale from './pages/project/onlineSale';
+import Kelim from './pages/project/kelim';
+import Kyungnam from './pages/project/kyungnam';
+import Jaseng from './pages/project/jaseng';
+import Daewoo from './pages/project/daewoo';
 
 class App extends Component {
     render() {
