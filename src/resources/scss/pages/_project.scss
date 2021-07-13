@@ -53,10 +53,27 @@
     }
 
     &_detail {
+        $detailTop: 150px;
+
+        position: relative;
         width: 100%;
         max-width: 800px;
-        padding-top: 150px;
+        padding-top: $detailTop;
         margin: 0 auto;
+
+        &_back {
+            overflow: hidden;
+            position: absolute;
+            right: 0;
+            top: $detailTop + 10px;
+            width: 36px;
+            height: 36px;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-size: 0;
+            text-indent: -9999px;
+        }
 
         &_tit {
             margin-bottom: 30px;

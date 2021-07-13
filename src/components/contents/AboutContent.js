@@ -13,11 +13,11 @@ class AboutContent extends Component {
                             무던하고 책임감 강한 성격으로 타팀과의 협업에서 트러블 없이 프로젝트들을 성공적으로 오픈했고, 항상 좋은 평가를 받아 왔습니다.
                             최근에는 온라인 구매 예약 서비스를 제작하며 데이터를 다루는데 흥미를 느껴 Frontend Developer를 목표로 역량을 키워 나가고 있습니다.
                         </p>
-                        <a className="email" href="mailto:kwj5030@gmail.com" target="_blank" rel="noreferrer">kwj5030@gmail.com</a>
+                        <a className="email" href="mailto:kwj5030@gmail.com" target="_blank" rel="noreferrer" title="새 창 열림">kwj5030@gmail.com</a>
                         <ul className="links">
-                            <a className="link" href="https://github.com/bearjin" target="_blank" rel="noreferrer">Github</a>
-                            <a className="link" href="https://bearjin.github.io" target="_blank" rel="noreferrer">Blog</a>
-                            <a className="link" href="https://bearjin.github.io/portfolio" target="_blank" rel="noreferrer">Portfolio</a>
+                            <a className="link" href="https://github.com/bearjin" target="_blank" rel="noreferrer" title="새 창 열림">Github</a>
+                            <a className="link" href="https://bearjin.github.io" target="_blank" rel="noreferrer" title="새 창 열림">Blog</a>
+                            <a className="link" href="https://bearjin.github.io/portfolio">Portfolio</a>
                         </ul>
                     </div>
                     <div className="about_skill">

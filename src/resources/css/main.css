@@ -198,7 +198,9 @@ input[type=text]::-ms-clear { display: none; }
 
 .project_list .item .date { font-weight: 300; font-size: 12px; color: #666; }
 
-.project_detail { width: 100%; max-width: 800px; padding-top: 150px; margin: 0 auto; }
+.project_detail { position: relative; width: 100%; max-width: 800px; padding-top: 150px; margin: 0 auto; }
+
+.project_detail_back { overflow: hidden; position: absolute; right: 0; top: 160px; width: 36px; height: 36px; background-position: 50%; background-repeat: no-repeat; background-size: cover; font-size: 0; text-indent: -9999px; }
 
 .project_detail_tit { margin-bottom: 30px; font-weight: 600; }
 

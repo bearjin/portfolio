@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MenuIcon from '../../resources/images/project/detail/menu.png';
 
 class ProjectDetail extends Component {
     constructor(props) {
@@ -9,9 +10,9 @@ class ProjectDetail extends Component {
     }
 
     makeTxt() {
-        const txtList = this.state.data.txt.map((elm) => {
+        const txtList = this.state.data.txt.map((elm, idx) => {
             return (
-                <p className="txt">{elm}</p>
+                <p key={idx} className="txt">{elm}</p>
             );
         });
 
@@ -19,9 +20,9 @@ class ProjectDetail extends Component {
     }
 
     makeRoleList() {
-        const roleList = this.state.data.role.map((elm) => {
+        const roleList = this.state.data.role.map((elm, idx) => {
             return (
-                <li className="list">{elm}</li>
+                <li key={idx} className="list">{elm}</li>
             );
         });
 
@@ -31,6 +32,7 @@ class ProjectDetail extends Component {
     render() {
         return (
             <section className="project_detail">
+                <a className="project_detail_back" href="/portfolio/project" style={{ backgroundImage: `url(${MenuIcon})` }} title="목록으로">목록으로</a>
                 <h2 className="project_detail_tit">{this.state.data.subj}</h2>
                 <div className="project_detail_img">
                     <img src={require(`../../resources/images/project/detail/${this.state.data.img}.jpg`).default} alt="img"></img>
@@ -42,7 +44,7 @@ class ProjectDetail extends Component {
                             사용기술 : <span>{this.state.data.tech}</span>
                         </li>
                         <li className="item">
-                            링크 : <a className="link" href={this.state.data.link} target="_blank" rel="noreferrer">{this.state.data.link}</a>
+                            링크 : <a className="link" href={this.state.data.link} target="_blank" rel="noreferrer" title="새 창 열림">{this.state.data.link}</a>
                         </li>
                         <li className="item">
                             담당업무 :
@@ -50,7 +52,7 @@ class ProjectDetail extends Component {
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section >
         );
     }
 }

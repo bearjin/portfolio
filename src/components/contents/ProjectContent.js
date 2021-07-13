@@ -9,9 +9,9 @@ class ProjectContent extends Component {
         }
     }
     makeProjectList() {
-        const list = this.state.data.map((elm) => {
+        const ProjectList = this.state.data.map((elm, idx) => {
             return (
-                <li className="item">
+                <li key={idx} className="item">
                     <a href={`/portfolio/project/${elm.link}`}>
                         <div className="img">
                             <img src={require(`../../resources/images/project/${elm.img}.png`).default} alt="img" />
@@ -23,7 +23,7 @@ class ProjectContent extends Component {
             );
         });
 
-        return list;
+        return ProjectList;
     }
 
     render() {
