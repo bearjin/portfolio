@@ -12,7 +12,7 @@ class ProjectContent extends Component {
         const list = this.state.data.map((elm) => {
             return (
                 <li className="item">
-                    <a href={`#/project/${elm.link}`}>
+                    <a href={`/portfolio/project/${elm.link}`}>
                         <div className="img">
                             <img src={require(`../../resources/images/project/${elm.img}.png`).default} alt="img" />
                         </div>

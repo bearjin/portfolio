@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from './components/structure/Header';
 import Footer from './components/structure/Footer';
 import Main from './pages/Main';
@@ -14,10 +14,12 @@ import Kyungnam from './pages/project/Kyungnam';
 import Jaseng from './pages/project/Jaseng';
 import Daewoo from './pages/project/Daewoo';
 
+import ScrollToTop from './ScrollToTop.js';
 class App extends Component {
     render() {
         return (
-            <Router>
+            <Router basename="/portfolio">
+                <ScrollToTop />
                 <div className="container">
                     <Header />
                     <Switch>
