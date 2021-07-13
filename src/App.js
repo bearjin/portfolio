@@ -23,9 +23,9 @@ class App extends Component {
         return (
             <div className="container">
                 <Header />
-                <Router basename="/portfolio">
+                <Router>
                     <Switch>
-                        <Route exact path="/" component={Main} />
+                        <Route exact path="/portfolio" component={Main} />
                         <Route exact path="/about" component={About} />
                         <Route exact path="/career" component={Career} />
                         <Route exact path="/project" component={Project} />
