@@ -26,16 +26,16 @@ class App extends Component {
                 <Router>
                     <Switch>
                         <Route exact path="/portfolio" component={Main} />
-                        <Route exact path="/portfolio/about" component={About} />
-                        <Route exact path="/portfolio/career" component={Career} />
-                        <Route exact path="/portfolio/project" component={Project} />
-                        <Route exact path="/portfolio/project/onlineShop" component={OnlineShop} />
-                        <Route exact path="/portfolio/project/hanwha" component={Hanwha} />
-                        <Route exact path="/portfolio/project/onlineSale" component={OnlineSale} />
-                        <Route exact path="/portfolio/project/kelim" component={Kelim} />
-                        <Route exact path="/portfolio/project/kyungnam" component={Kyungnam} />
-                        <Route exact path="/portfolio/project/jaseng" component={Jaseng} />
-                        <Route exact path="/portfolio/project/daewoo" component={Daewoo} />
+                        <Route exact path="/portfolio/About" component={About} />
+                        <Route exact path="/portfolio/Career" component={Career} />
+                        <Route exact path="/portfolio/Project" component={Project} />
+                        <Route exact path="/portfolio/project/OnlineShop" component={OnlineShop} />
+                        <Route exact path="/portfolio/project/Hanwha" component={Hanwha} />
+                        <Route exact path="/portfolio/project/OnlineSale" component={OnlineSale} />
+                        <Route exact path="/portfolio/project/Kelim" component={Kelim} />
+                        <Route exact path="/portfolio/project/Kyungnam" component={Kyungnam} />
+                        <Route exact path="/portfolio/project/Jaseng" component={Jaseng} />
+                        <Route exact path="/portfolio/project/Daewoo" component={Daewoo} />
                     </Switch>
                 </Router>
                 <Footer />
