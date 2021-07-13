@@ -5,7 +5,7 @@ class Header extends Component {
         return (
             <header id="header" className="header">
                 <div className="header_inner">
-                    <h1 className="logo"><a className="link" href="/portfolio">Home</a></h1>
+                    <h1 className="logo"><a className="link" href="/">Home</a></h1>
                     <button className="btn-gnb">MENU</button>
                     <nav id="gnb" className="gnb_wrap">
                         <ul className="gnb_inner">
