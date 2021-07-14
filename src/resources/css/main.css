@@ -134,6 +134,8 @@ input[type=text]::-ms-clear { display: none; }
 
 .about_skill .skills .item[data-item="git"] .info .rank_meter.active { background-color: black; }
 
+.about_skill .skills .item[data-item="sourcetree"] .info .rank_meter.active { background-color: darkgreen; }
+
 .about_skill .skills .item[data-item="photoshop"] .info .rank_meter.active { background-color: blue; }
 
 .about_skill .skills .item .name { margin-bottom: 10px; }

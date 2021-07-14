@@ -84,6 +84,10 @@
                     background-color: black;
                 }
 
+                &[data-item="sourcetree"] .info .rank_meter.active {
+                    background-color: darkgreen;
+                }
+
                 &[data-item="photoshop"] .info .rank_meter.active {
                     background-color: blue;
                 }
