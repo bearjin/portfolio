@@ -1,38 +1,5 @@
+@import "./common";
 @import "./home";
 @import "./about";
 @import "./career";
 @import "./project";
-
-// common
-.sec {
-    width: 100%;
-    padding-top: 150px;
-    margin: 0 auto;
-    transition: all .6s ease;
-
-    &_inner {
-        padding: 0 25px;
-    }
-
-    &_subj {
-        position: relative;
-        margin-bottom: 50px;
-        font-weight: 700;
-        font-size: 32px;
-        font-style: italic;
-
-        &::after {
-            content: '';
-            display: inline-block;
-            width: 65px;
-            height: 4px;
-            margin-left: 10px;
-            background-color: #393939;
-        }
-    }
-}
-
-.page-enter {
-    opacity: 0;
-    transform: translateY(-50px);
-}

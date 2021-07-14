@@ -1,7 +1,5 @@
 // project
 .project {
-    max-width: 800px;
-
     &_list {
         display: flex;
         justify-content: flex-start;
@@ -53,17 +51,13 @@
     }
 
     &_detail {
-        $detailTop: 150px;
-
         position: relative;
-        max-width: 800px;
-        padding-top: $detailTop;
 
         &_back {
             overflow: hidden;
             position: absolute;
-            right: 0;
-            top: $detailTop + 10px;
+            right: 25px;
+            top: 160px;
             width: 36px;
             height: 36px;
             background-position: 50%;
@@ -133,6 +127,61 @@
                             width: 8px;
                             height: 1px;
                             background-color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include tablet {
+    .project {
+        &_list {
+            .item {
+                max-width: calc((100% / 2) - 20px);
+            }
+
+            .img {
+                height: 200px;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .project {
+        &_list {
+            .item {
+                max-width: 100%;
+                margin: 0 0 20px 0;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &_detail {
+            padding-top: 100px;
+
+            &_back {
+                top: 105px;
+                width: 28px;
+                height: 28px;
+            }
+
+            &_list {
+                .item {
+                    &::before {
+                        top: 9px;
+                    }
+
+                    .role_list {
+                        li {
+                            &::before {
+                                top: 10px;
+                            }
                         }
                     }
                 }

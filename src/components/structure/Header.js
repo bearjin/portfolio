@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
-
 class Header extends Component {
     render() {
         return (
             <header id="header" className="header">
                 <div className="header_inner">
                     <h1 className="logo"><a className="link" href="#/">Home</a></h1>
-                    <button className="btn-gnb">MENU</button>
+                    <button className="btn_menu" onClick={function (e) {
+                        const $header = document.querySelector('.header');
+                        $header.classList.toggle('open');
+                    }}>
+                        <span className="menu_bar"></span>
+                        <span className="menu_text">Menu</span>
+                    </button>
                     <nav id="gnb" className="gnb_wrap">
                         <ul className="gnb_inner">
                             <li className="depth1"><a className="depth1_link" href="#/about">About</a></li>
@@ -16,7 +21,7 @@ class Header extends Component {
                         </ul>
                     </nav>
                 </div>
-            </header>
+            </header >
         );
     }
 }

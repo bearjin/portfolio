@@ -1,0 +1,56 @@
+// common
+.sec {
+    width: 100%;
+    max-width: 800px;
+    padding: 150px 0;
+    margin: 0 auto;
+    transition: all .6s ease;
+
+    &+.sec {
+        padding-top: 0;
+    }
+
+    &_inner {
+        padding: 0 25px;
+    }
+
+    &_subj {
+        position: relative;
+        margin-bottom: 50px;
+        font-weight: 700;
+        font-size: 32px;
+        font-style: italic;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 65px;
+            height: 4px;
+            margin-left: 10px;
+            background-color: #393939;
+        }
+    }
+}
+
+.page-enter {
+    opacity: 0;
+    transform: translateY(-50px);
+}
+
+@include tablet {
+    .sec {
+        max-width: calc(100% - 60px);
+    }
+}
+
+@include mobile {
+    .sec {
+        max-width: 100%;
+        padding: 80px 0;
+
+        &_subj {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+    }
+}

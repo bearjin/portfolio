@@ -1,7 +1,5 @@
 // career
 .career {
-    max-width: 800px;
-
     &_detail {
         &_intro {
             padding-bottom: 30px;
@@ -77,6 +75,52 @@
                         width: 8px;
                         height: 1px;
                         background-color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+    .career {
+        &_detail {
+            &_profile {
+                flex-flow: column;
+                align-items: flex-start;
+
+                .profile_img {
+                    width: 150px;
+                    height: 150px;
+                    background-size: 80%;
+                }
+
+                .profile_info {
+                    margin: 20px 0 0 0;
+
+                    .tit {
+                        font-size: 20px;
+                    }
+
+                    .year {
+                        font-size: 16px;
+                    }
+
+                    .role {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        &_project_list {
+            .item {
+                .name {
+                    padding-left: 10px;
+
+                    &::before {
+                        top: 5px;
+                        height: 12px;
                     }
                 }
             }

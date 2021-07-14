@@ -1,6 +1,5 @@
 #root {
     position: relative;
-    padding-bottom: 150px;
 
     &::before {
         content: '';
@@ -29,6 +28,25 @@
     width: 100%;
     height: 84px;
 
+    &.open {
+        .header_inner {
+            .btn_menu {
+                .menu_bar {
+                    transform: skew(5deg) translateY(-8px) rotate(-45deg);
+
+                    &::before {
+                        transform: translateY(0px) skew(-10deg) rotate(75deg);
+                    }
+
+                    &::after {
+                        transform: translateY(-12px) translateX(10px) skew(-20deg);
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+
     .header_inner {
         position: absolute;
         left: 0;
@@ -39,6 +57,7 @@
             position: absolute;
             left: 50%;
             top: 10px;
+            z-index: 2;
             width: 64px;
             height: 64px;
             margin-left: -32px;
@@ -53,8 +72,54 @@
             }
         }
 
-        .btn-gnb {
-            display: none;
+        .btn_menu {
+            visibility: hidden;
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            padding-top: 20px;
+            z-index: 2;
+            background: none;
+            border: 0;
+            cursor: pointer;
+
+            .menu_bar {
+                position: relative;
+                display: block;
+                width: 28px;
+                height: 4px;
+                margin: 0 auto;
+                background: #5a3b5d;
+                transform: skew(5deg);
+                transition: all .275s;
+
+                &::before,
+                &::after {
+                    content: '';
+                    display: block;
+                    height: 100%;
+                    background: #5A3B5D;
+                    transition: all .275s;
+                }
+
+                &::before {
+                    transform: translateY(-16px) skew(-10deg);
+                }
+
+                &::after {
+                    transform: translateY(-12px) translateX(-2px) skew(-20deg);
+                }
+            }
+
+            .menu_text {
+                display: block;
+                margin-top: 5px;
+                font-weight: 500;
+                font-size: 13px;
+                color: #5a3b5d;
+                line-height: 1;
+                text-align: center;
+            }
         }
 
         .gnb_inner {
@@ -70,32 +135,6 @@
                     font-weight: 600;
                     font-size: 20px;
                     color: #000;
-                }
-            }
-        }
-    }
-
-    &.on {
-        .header_inner {
-            .logo {
-                left: 18%;
-                margin-left: 0;
-            }
-
-            .gnb_wrap {
-                display: none;
-
-                &.on {
-                    display: block;
-
-                    .gnb_inner {
-                        margin-top: 22px;
-                    }
-                }
-
-                .gnb_inner {
-                    position: relative;
-                    margin-top: 31px;
                 }
             }
         }
@@ -117,5 +156,83 @@
         color: #7a7a7a;
         text-align: center;
         line-height: 60px;
+    }
+}
+
+@include mobile {
+    #root {
+        &::before {
+            display: none;
+        }
+    }
+
+    .header {
+        top: 0;
+        height: auto;
+
+        &.open {
+            .header_inner {
+                .gnb_wrap {
+                    visibility: visible;
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        .header_inner {
+            height: 0;
+
+            .logo {
+                left: 20px;
+                top: 20px;
+                width: 40px;
+                height: 40px;
+                margin-left: 0;
+            }
+
+            .btn_menu {
+                visibility: visible;
+            }
+
+            .gnb_wrap {
+                visibility: hidden;
+                padding: 70px 0 20px;
+                background-color: #fff;
+                opacity: 0;
+                transform: translateY(-50px);
+                transition: all .5s ease;
+            }
+
+            .gnb_inner {
+                flex-flow: column;
+                height: auto;
+
+                .depth1 {
+                    width: 100%;
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+
+                    .depth1_link {
+                        display: inline-block;
+                        width: 80%;
+                        padding: 10px 0;
+                        border: 1px solid #000;
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer {
+        height: 40px;
+
+        address {
+            line-height: 40px;
+        }
     }
 }

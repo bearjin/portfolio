@@ -1,7 +1,5 @@
 // about
 .about {
-    max-width: 800px;
-
     &_intro {
         margin-bottom: 50px;
 
@@ -129,6 +127,55 @@
                                 &:hover {
                                     transform: scale(1.2);
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+    .about {
+        &_intro {
+            .name {
+                font-size: 18px;
+            }
+
+            .txt {
+                font-size: 14px;
+            }
+
+            .email {
+                margin-top: 20px;
+                font-size: 13px;
+            }
+
+            .links {
+                .link {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        &_skill {
+            flex-flow: column;
+
+            .skills {
+                &+.skills {
+                    margin-top: 30px;
+                }
+
+                .item {
+                    .info {
+                        .rank {
+                            margin-left: 10px;
+
+                            &_meter {
+                                width: 14px;
+                                height: 14px;
+                                margin-left: 5px;
                             }
                         }
                     }
