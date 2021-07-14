@@ -1,8 +1,8 @@
 const projectDetailData = {
-    'OnlineShop': {
-        'subj': '쉐보레 온라인 샵',
-        'img': 'online_shop',
-        'txt': [
+    OnlineShop: {
+        subj: '쉐보레 온라인 샵',
+        img: 'online_shop',
+        txt: [
             `고객들이 오프라인 전시장을 방문하지 않고 온라인을 통해 쉐보레 차량을 구매가 가능하도록 제공하는 서비스 입니다.
             사용자가 구매를 원하는 차량을 선택하고 본인의 상황에 맞게 견적 옵션들이 선택 가능합니다.
             사용자 선택에 따라 단계별로 옵션들이 동적으로 변하며 모든 옵션을 선택 완료 후 최종 단계에서 사용자가 선택한 옵션들을
@@ -12,33 +12,33 @@ const projectDetailData = {
             계산식을 잘못 적용할 경우 잘못된 가격이 화면에 노출되어 사용자에게 큰 혼란을 주고 실제 온라인에서 결제까지 이루어지기 때문에 수차례 확인 과정을 거치고 주의해서 제작하여 문제없이 오픈하였고
             많이 배울 수 있었습니다.`
         ],
-        'tech': 'HTML, CSS, Javascript, jQuery, Ajax',
-        'link': 'https://www.chevrolet.co.kr/purchase/online.gm',
-        'role': [
+        tech: 'HTML, CSS, Javascript, jQuery, Ajax',
+        link: 'https://www.chevrolet.co.kr/purchase/online.gm',
+        role: [
             `페이지 제작(HTML, CSS) : 인덱스, 차량 선택, 차량 주문, 결제, 주문 관리 (100%)`,
             `페이지 기능(Javascript, jQuery, Ajax) : 인덱스, 차량 선택, 차량 주문 (80%)`
         ]
     },
-    'Hanwha': {
-        'subj': '한화건설',
-        'img': 'hanwha',
-        'txt': [
+    Hanwha: {
+        subj: '한화건설',
+        img: 'hanwha',
+        txt: [
             `기존 한화건설 사이트 리뉴얼 프로젝트로 저를 포함 2명이서 프로젝트를 진행하였고 고객사에서 원하는 접근성 준수 기준이 있어 접근성을 고려하여 코딩하여 웹와치 심사를 통과하였습니다.`,
             `메인페이지에서 youtube api를 사용해 영상을 컨트롤 하였고, 슬라이드는 swiper.js 를 사용해서 제작했습니다. 
             관리자로 연동되는 페이지들이 많아 관리자에서 입력한 내용들이 틀어지지 않고 나오도록 주의해서 코딩했습니다.
             `
         ],
-        'tech': 'HTML, CSS, Javascript, jQuery, YouTube API, Swiper API',
-        'link': 'https://www.hwenc.co.kr/',
-        'role': [
+        tech: 'HTML, CSS, Javascript, jQuery, YouTube API, Swiper API',
+        link: 'https://www.hwenc.co.kr/',
+        role: [
             `페이지 제작(HTML, CSS) : 메인페이지(100%), 서브페이지 : 회사소개(100%), 사업분야(30%), 지속가능경영(85%), 홍보센터(100%), 고객센터(100%)`,
             `페이지 기능(Javascript, jQuery, YouTube API, Swiper API) : 메인페이지(100%), 서브페이지 : 회사소개(100%), 사업분야(10%), 지속가능경영(85%), 홍보센터(100%), 고객센터(100%)`
         ]
     },
-    'OnlineSale': {
-        'subj': '쉐보레 온라인 구매 예약',
-        'img': 'online_sales',
-        'txt': [
+    OnlineSale: {
+        subj: '쉐보레 온라인 구매 예약',
+        img: 'online_sales',
+        txt: [
             `고객들이 오프라인 전시장을 방문하지 않고 온라인을 통해 원하는 쉐보레 차량 모델을 선택해 트림, 외관, 실내 옵션들을 선택해보고 구매 예약까지 비대면으로 제공하는 서비스 입니다.`,
             `모델 구성하기 페이지를 담당해서 제작했었고 처음으로 직접 개발팀과 조율해 데이터 구조를 정해보고 많은 데이터를 활용해 화면을 구성하는 업무를 제대로 해볼 수 있었고,
             sessionStorage를 통한 데이터 보관 및 활용도 접해보며 많이 배울 수 있었습니다. 차량 이미지를 표현하고 옵션은 또 어떻게 표현해야 될지에 대해 디자인팀, 기획팀과 많은 고민을 하고 조율해 
@@ -46,33 +46,33 @@ const projectDetailData = {
             협업에서 커뮤니케이션의 중요성을 다시 한번 느끼고 배우며 능력을 기를수 있었습니다.
             `
         ],
-        'tech': 'HTML, CSS, Javascript, jQuery, Ajax, Swiper API',
-        'link': 'https://www.chevrolet.co.kr/purchase/estimate-online.gm',
-        'role': [
+        tech: 'HTML, CSS, Javascript, jQuery, Ajax, Swiper API',
+        link: 'https://www.chevrolet.co.kr/purchase/estimate-online.gm',
+        role: [
             `페이지 제작(HTML, CSS) : 인덱스, 모델 구성하기(100%)`,
             `페이지 기능(Javascript, jQuery, Ajax, Swiper API) : 인덱스, 모델 구성하기(100%)`
         ]
     },
-    'Kelim': {
-        'subj': '계림요업',
-        'img': 'kelim',
-        'txt': [
+    Kelim: {
+        subj: '계림요업',
+        img: 'kelim',
+        txt: [
             `기존 계림요업 사이트 리뉴얼 프로젝트로 저를 포함 2명이서 프로젝트를 진행하였습니다. 다양한 제품을 소개하고 기업을 소개할 수 있는 사이트로 제작되었습니다.`,
             `메인 페이지를 영상들을 Video API(WEB API)를 활용해 슬라이드처럼 동작하도록 만들었고, 
             홍보센터 서브페이지에서 Swiper API 활용해 다양한 슬라이드를 제작해보며 API를 활용하는 방법과 공식문서를 보는법을 더 익히게 되었습니다.
             `
         ],
-        'tech': 'HTML, CSS, Javascript, jQuery, Swiper API',
-        'link': 'http://www.kelim.net/',
-        'role': [
+        tech: 'HTML, CSS, Javascript, jQuery, Swiper API',
+        link: 'http://www.kelim.net/',
+        role: [
             `페이지 제작(HTML, CSS) : 메인페이지(100%), 서브페이지 : 회사소개(100%), 홍보센터(100%), 고객센터(50%)`,
             `페이지 기능(Javascript, jQuery, Swiper API) : 메인페이지(100%), 서브페이지 : 회사소개(100%), 홍보센터(100%)`
         ]
     },
-    'Kyungnam': {
-        'subj': '경남 아너스빌 분양(송추)',
-        'img': 'kyungnam',
-        'txt': [
+    Kyungnam: {
+        subj: '경남 아너스빌 분양(송추)',
+        img: 'kyungnam',
+        txt: [
             `경남 아너스빌 분양(송추) 사이트 혼자 담당해 반응형으로 제작이 되었고, 프로젝트 당시 제작일정이 많이 부족했습니다.
             기획팀, 디자인팀과 태블릿, 모바일로 변경 될 시 레이아웃이 밑으로 한단씩 내려가는 최대한 간단한 구조로 조율해 반응형이 적용되도록 조율 했고
             일정에 맞춰 진행될 수 있었습니다.
@@ -80,39 +80,39 @@ const projectDetailData = {
             `이번 프로젝트를 통해 반응형에 대해 다시 한번 개념을 정리 할 수 있었고, 혼자서 일정 관리 및 작업을 진행하며 프로젝트를 전반적으로 관리하고
             타팀과 협의하는 능력을 키울 수 있어 많은 도움이 되었습니다.`
         ],
-        'tech': 'HTML, CSS, Javascript, jQuery, Swiper API',
-        'link': 'https://bukhansan.honorsville.co.kr/',
-        'role': [
+        tech: 'HTML, CSS, Javascript, jQuery, Swiper API',
+        link: 'https://bukhansan.honorsville.co.kr/',
+        role: [
             `페이지 제작(HTML, CSS) : 메인페이지(100%), 서브페이지(100%)`,
             `페이지 기능(Javascript, jQuery, Swiper API) : 메인페이지(100%), 서브페이지(100%)`
         ]
     },
-    'Jaseng': {
-        'subj': '자생의료재단',
-        'img': 'jaseng',
-        'txt': [
+    Jaseng: {
+        subj: '자생의료재단',
+        img: 'jaseng',
+        txt: [
             `기존 자생의료재단 사이트 리뉴얼 프로젝트로 저를 포함 2명이서 프로젝트를 진행하였고 재단을 소개하고 소식을 전하는 페이지들 위주로 제작되었습니다.`,
             `2번째 구축으로 이전보다 서브페이지들을 전반적으로 담당해서 진행하였고 다양한 게시판들과 축소확대, SNS 연동, 프린팅 기능 등등 이전에 접해보지 못해 새로운 기능들을 만들며 많이 배울 수 있었습니다.`
         ],
-        'tech': 'HTML, CSS, Javascript, jQuery, Facebook API, slick',
-        'link': 'https://jaseng.org/index.do',
-        'role': [
+        tech: 'HTML, CSS, Javascript, jQuery, Facebook API, slick',
+        link: 'https://jaseng.org/index.do',
+        role: [
             `페이지 제작(HTML, CSS) : 메인페이지(70%), 서브페이지 : 재단소개(100%), 한의학 R&D(50%), 사회공헌(50%), 의료사업(80%), 후원기부(50%), 재단소식(50%)`,
             `페이지 기능(Javascript, jQuery, Facebook API, slick) : 메인페이지(20%), 서브페이지 : 사회공헌(100%), 의료사업(100%), 후원기부(50%)`
         ]
     },
-    'Daewoo': {
-        'subj': '대우건설',
-        'img': 'daewoo',
-        'txt': [
+    Daewoo: {
+        subj: '대우건설',
+        img: 'daewoo',
+        txt: [
             `기존 대우건설 사이트 리뉴얼 프로젝트로 대우건설의 사업에 대한 내용들을 잘보여줄 수 있도록 제작되고 대우건설 임직원의 소식을 전하는 OB사랑방을 함께 제작했습니다.`,
             `처음으로 구축 프로젝트에 참여하여 사수분의 배려로 구축 업무가 어떻게 이루어지는지 하나하나 배워 나갈수 있었습니다. OB사랑방을 전담해서 제작했고, 구축시 주의해야 되는점들을 많이 배우며 HTML,CSS의
             기본기들을 다질수 있었습니다. 사업분야 페이지의 원페이지 기능을 제작하며 스크롤과 트랜스폼,트랜지션을 활용한 시차모션들을 많이 배울 수 있었습니다.
             `
         ],
-        'tech': 'HTML, CSS, Javascript, jQuery, Google Maps',
-        'link': 'http://www.daewooenc.com/',
-        'role': [
+        tech: 'HTML, CSS, Javascript, jQuery, Google Maps',
+        link: 'http://www.daewooenc.com/',
+        role: [
             `페이지 제작(HTML, CSS) : 서브페이지 : 회사소개(100%), 사업분야(50%), 홍보센터(50%), 뉴스룸(100%)`,
             `페이지 기능(Javascript, jQuery, Google Maps) : 서브페이지 : 사업분야(100%)`
         ]

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ProjectDetail from '../../components/contents/ProjectDetail';
-import ProjectDetailData from '../../data/ProjectDetail';
+import ProjectDetailData from '../../data/ProjectDetailData';
 
 class OnlineSale extends Component {
     constructor(props) {
