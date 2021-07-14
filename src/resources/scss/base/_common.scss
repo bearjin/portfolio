@@ -17,6 +17,7 @@
 .container {
     position: relative;
     z-index: 2;
+    background-color: #fee253;
 }
 
 /* header */
@@ -229,10 +230,10 @@
     }
 
     .footer {
-        height: 40px;
+        height: 50px;
 
         address {
-            line-height: 40px;
+            line-height: 50px;
         }
     }
 }

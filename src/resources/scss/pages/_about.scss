@@ -55,39 +55,39 @@
                 }
 
                 &[data-item="html"] .info .rank_meter.active {
-                    background-color: orange;
+                    background-color: #fd9828;
                 }
 
                 &[data-item="css"] .info .rank_meter.active {
-                    background-color: royalblue;
+                    background-color: #1f96f6;
                 }
 
                 &[data-item="sass"] .info .rank_meter.active {
-                    background-color: palevioletred;
+                    background-color: #be6f91;
                 }
 
                 &[data-item="js"] .info .rank_meter.active {
-                    background-color: yellow;
+                    background-color: #f0db4e;
                 }
 
                 &[data-item="jquery"] .info .rank_meter.active {
-                    background-color: mediumslateblue;
+                    background-color: #0666a9;
                 }
 
                 &[data-item="react"] .info .rank_meter.active {
-                    background-color: mediumturquoise;
+                    background-color: #59dafa;
                 }
 
                 &[data-item="git"] .info .rank_meter.active {
-                    background-color: black;
+                    background-color: #000;
                 }
 
                 &[data-item="sourcetree"] .info .rank_meter.active {
-                    background-color: darkgreen;
+                    background-color: #235182;
                 }
 
                 &[data-item="photoshop"] .info .rank_meter.active {
-                    background-color: blue;
+                    background-color: #094db3;
                 }
 
                 .name {
@@ -136,6 +136,20 @@
     }
 }
 
+@include tablet {
+    .about {
+        &_skill {
+            flex-flow: column;
+
+            .skills {
+                &+.skills {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}
+
 @include mobile {
     .about {
         &_intro {
@@ -160,13 +174,7 @@
         }
 
         &_skill {
-            flex-flow: column;
-
             .skills {
-                &+.skills {
-                    margin-top: 30px;
-                }
-
                 .item {
                     .info {
                         .rank {

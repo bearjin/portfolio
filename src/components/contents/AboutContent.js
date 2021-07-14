@@ -13,7 +13,7 @@ class AboutContent extends Component {
     makeIntroLink() {
         const links = this.state.IntroData.links.map((elm, idx) => {
             return (
-                <a key={idx} className="link" href={elm.link} target="_blank" rel="noreferrer" title="새 창 열림">elm.name</a>
+                <a key={idx} className="link" href={elm.link} target="_blank" rel="noreferrer" title="새 창 열림">{elm.name}</a>
             );
         });
         return links;

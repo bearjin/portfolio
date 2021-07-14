@@ -12,11 +12,6 @@ body {
     line-height: 1.6;
     word-break: keep-all;
     word-wrap: break-word;
-
-    @include mobile {
-        font-size: 14px;
-    }
-
 }
 
 body,
@@ -210,4 +205,16 @@ input[type=text]::-ms-clear {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+@include tablet {
+    body {
+        font-size: 16px;
+    }
+}
+
+@include mobile {
+    body {
+        font-size: 14px;
+    }
 }

@@ -82,6 +82,38 @@
     }
 }
 
+@include tablet {
+    .career {
+        &_detail {
+            &_profile {
+                .profile_info {
+                    margin-left: 20px;
+                }
+
+                .profile_img {
+                    width: 150px;
+                    height: 150px;
+                    background-size: 80%;
+                }
+
+                .profile_info {
+                    .tit {
+                        font-size: 24px;
+                    }
+
+                    .year {
+                        font-size: 16px;
+                    }
+
+                    .role {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @include mobile {
     .career {
         &_detail {
