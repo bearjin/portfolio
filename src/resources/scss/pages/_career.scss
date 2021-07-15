@@ -5,6 +5,12 @@
             padding-bottom: 30px;
             margin-bottom: 30px;
             border-bottom: 1px solid #000;
+
+            .career_detail_txt {
+                &+.career_detail_txt {
+                    margin-top: 20px;
+                }
+            }
         }
 
         &_profile {

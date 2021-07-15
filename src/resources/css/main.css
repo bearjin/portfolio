@@ -141,14 +141,11 @@ input[type=text]::-ms-clear { display: none; }
 
 .home .typewriter span { border-right: .05em solid; -webkit-animation: caret 1s steps(1) infinite; animation: caret 1s steps(1) infinite; }
 
-.home .name { font-weight: 700; font-size: 30px; }
-
 @-webkit-keyframes caret { 50% { border-color: transparent; } }
 
 @keyframes caret { 50% { border-color: transparent; } }
 
-@media (max-width: 920px) { .txt { font-size: 30px; }
-  .name { font-size: 24px; } }
+@media (max-width: 640px) { .home .typewriter { font-size: 40px; } }
 
 .about_intro { margin-bottom: 50px; }
 
@@ -215,6 +212,8 @@ input[type=text]::-ms-clear { display: none; }
   .about_skill .skills .item .info .rank_meter { width: 14px; height: 14px; margin-left: 5px; } }
 
 .career_detail_intro { padding-bottom: 30px; margin-bottom: 30px; border-bottom: 1px solid #000; }
+
+.career_detail_intro .career_detail_txt + .career_detail_txt { margin-top: 20px; }
 
 .career_detail_profile { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 20px; }
 

@@ -14,7 +14,10 @@ class CareerDetail extends Component {
                         </div>
                     </div>
                     <p className="career_detail_txt">
-                        웹에이전시로 주로 기업 사이트 구축 및 유지운영
+                        웹에이전시로 e-Business의 구축부터 운영까지 통합디지털마케팅서비스를 제공하고 있습니다.
+                    </p>
+                    <p className="career_detail_txt">
+                        기본적으로는 사이트 구축 및 유지운영 업무를 담당했으며 PL로써 프로젝트 관리 업무 또한 담당했습니다.
                     </p>
                 </div>
                 <ol className="career_project_list">

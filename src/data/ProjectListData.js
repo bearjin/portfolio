@@ -30,16 +30,16 @@ const ProjectListData = [
         date: '2020.02 ~ 2020.03',
     },
     {
+        link: 'daewoo',
+        img: 'daewoo',
+        subj: '대우건설',
+        date: '2019.02 ~ 2019.05',
+    },
+    {
         link: 'jaseng',
         img: 'jaseng',
         subj: '자생의료재단',
         date: '2018.10 ~ 2018.12',
-    },
-    {
-        link: 'daewoo',
-        img: 'daewoo',
-        subj: '대우건설',
-        date: '2018.07 ~ 2018.10',
     },
 ]
 

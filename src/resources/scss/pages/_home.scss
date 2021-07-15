@@ -19,11 +19,6 @@
             animation: caret 1s steps(1) infinite;
         }
     }
-
-    .name {
-        font-weight: 700;
-        font-size: 30px;
-    }
 }
 
 @keyframes caret {
@@ -32,12 +27,10 @@
     }
 }
 
-@include tablet {
-    .txt {
-        font-size: 30px;
-    }
-
-    .name {
-        font-size: 24px;
+@include mobile {
+    .home {
+        .typewriter {
+            font-size: 40px;
+        }
     }
 }
