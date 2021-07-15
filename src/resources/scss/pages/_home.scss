@@ -10,20 +10,34 @@
         padding-top: 0;
     }
 
-    .txt {
-        font-size: 36px;
+    .typewriter {
+        font-weight: 600;
+        font-size: 50px;
 
-        @include tablet {
-            font-size: 30px;
+        span {
+            border-right: .05em solid;
+            animation: caret 1s steps(1) infinite;
         }
     }
 
     .name {
         font-weight: 700;
         font-size: 30px;
+    }
+}
 
-        @include tablet {
-            font-size: 24px;
-        }
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@include tablet {
+    .txt {
+        font-size: 30px;
+    }
+
+    .name {
+        font-size: 24px;
     }
 }

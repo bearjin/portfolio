@@ -1,6 +1,5 @@
 import { Component } from 'react';
 import { withRouter } from "react-router-dom";
-
 class PageMotion extends Component {
     componentDidUpdate(prevProps) {
         if (this.props.location.pathname !== prevProps.location.pathname) {

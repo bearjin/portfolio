@@ -5,7 +5,7 @@ class Header extends Component {
             <header id="header" className="header">
                 <div className="header_inner">
                     <h1 className="logo"><a className="link" href="#/">Home</a></h1>
-                    <button className="btn_menu" onClick={function (e) {
+                    <button className="btn_menu" onClick={() => {
                         const $header = document.querySelector('.header');
                         $header.classList.toggle('open');
                     }}>

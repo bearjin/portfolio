@@ -137,13 +137,18 @@ input[type=text]::-ms-clear { display: none; }
 
 .home + .sec { padding-top: 0; }
 
-.home .txt { font-size: 36px; }
+.home .typewriter { font-weight: 600; font-size: 50px; }
 
-@media (max-width: 920px) { .home .txt { font-size: 30px; } }
+.home .typewriter span { border-right: .05em solid; -webkit-animation: caret 1s steps(1) infinite; animation: caret 1s steps(1) infinite; }
 
 .home .name { font-weight: 700; font-size: 30px; }
 
-@media (max-width: 920px) { .home .name { font-size: 24px; } }
+@-webkit-keyframes caret { 50% { border-color: transparent; } }
+
+@keyframes caret { 50% { border-color: transparent; } }
+
+@media (max-width: 920px) { .txt { font-size: 30px; }
+  .name { font-size: 24px; } }
 
 .about_intro { margin-bottom: 50px; }
 
