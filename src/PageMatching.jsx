@@ -5,7 +5,6 @@ import Career from './pages/Career';
 import Project from './pages/Project';
 
 const PageMatching = ({ history, match, loaction }) => {
-  console.log(match.params.name)
   if (match.params.name === 'about') {
     return <About />;
   } else if (match.params.name === 'career') {
