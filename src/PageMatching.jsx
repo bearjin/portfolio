@@ -4,7 +4,7 @@ import About from './pages/About';
 import Career from './pages/Career';
 import Project from './pages/Project';
 
-const PageMatching = ({ history, match, loaction }) => {
+const PageMatching = ({ match }) => {
   if (match.params.name === 'about') {
     return <About />;
   } else if (match.params.name === 'career') {

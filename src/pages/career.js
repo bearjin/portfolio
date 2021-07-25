@@ -1,12 +1,10 @@
-import React, { Component } from 'react';
+import React from 'react';
 import CareerContent from '../components/contents/CareerContent';
 
-class Career extends Component {
-    render() {
-        return (
-            <CareerContent />
-        );
-    }
+const Career = () => {
+  return (
+    <CareerContent />
+  );
 }
 
 export default Career;

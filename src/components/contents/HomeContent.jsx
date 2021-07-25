@@ -1,14 +1,9 @@
-import React, { Component } from 'react';
+import React, { useCallback, useEffect } from 'react';
 
-class Home extends Component {
-  componentDidMount() {
-    this.textMotion();
-  }
-
-  textMotion() {
-    var dataText = ["Hello World.", "열정을 가지고 소통하는 개발자가 되겠습니다.", "Front-end developer.", "Bearjin"];
-
-    function typeWriter(text, i, fnCallback) {
+const Home = () => {
+  const textMotion = useCallback(() => {
+    const dataText = ["Hello World.", "열정을 가지고 소통하는 개발자가 되겠습니다.", "Front-end developer.", "Bearjin"];
+    const typeWriter = (text, i, fnCallback) => {
       if (i < (text.length)) {
         if (document.querySelector(".typewriter")) {
           document.querySelector(".typewriter").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
@@ -21,7 +16,7 @@ class Home extends Component {
         setTimeout(fnCallback, 700);
       }
     }
-    function StartTextAnimation(i) {
+    const StartTextAnimation = (i) => {
       if (typeof dataText[i] === 'undefined') {
         setTimeout(() => {
           StartTextAnimation(0);
@@ -35,15 +30,17 @@ class Home extends Component {
       }
     }
     StartTextAnimation(0);
-  }
+  }, []);
 
-  render() {
-    return (
-      <section id="homeCont" className="home">
-        <p className="typewriter"></p>
-      </section>
-    );
-  }
+  useEffect(() => {
+    textMotion();
+  }, [textMotion]);
+
+  return (
+    <section id="homeCont" className="home">
+      <p className="typewriter"></p>
+    </section>
+  );
 }
 
 export default Home;
