@@ -8,7 +8,7 @@ const ProjectDetailContent = (props) => {
   const makeTxt = useCallback(() => {
     const txtList = data.txt.map((elm, idx) => {
       return (
-        <p key={`detail_txt_${idx}`} className="txt">{elm}</p>
+        <p key={`detail_txt_${idx}`} className="project-detail__txt">{elm}</p>
       );
     });
 
@@ -18,7 +18,7 @@ const ProjectDetailContent = (props) => {
   const makeRoleList = useCallback(() => {
     const roleList = data.role.map((elm, idx) => {
       return (
-        <li key={`role_${idx}`} className="list">{elm}</li>
+        <li key={`role_${idx}`} className="project-detail__role">{elm}</li>
       );
     });
 
@@ -26,25 +26,25 @@ const ProjectDetailContent = (props) => {
   }, [data]);
 
   return (
-    <section className="sec project_detail">
-      <div className="sec_inner">
-        <Link className="project_detail_back" to="/portfolio/project" style={{ backgroundImage: `url(${MenuIcon})` }} title="목록으로">목록으로</Link>
-        <h2 className="project_detail_tit">{this.state.data.subj}</h2>
-        <div className="project_detail_img">
-          <img src={require(`../../resources/images/project/detail/${this.state.data.img}.jpg`).default} alt="img"></img>
+    <section className="sec project-detail">
+      <div className="sec__inner">
+        <Link className="project-detail__back" to="/portfolio/project" style={{ backgroundImage: `url(${MenuIcon})` }} title="목록으로">목록으로</Link>
+        <h2 className="project-detail__tit">{data.subj}</h2>
+        <div className="project-detail__img">
+          <img src={require(`../../resources/images/project/detail/${data.img}.jpg`).default} alt={data.img}></img>
         </div>
-        <div className="project_detail_txt">{makeTxt()}</div>
-        <div className="project_detail_list">
-          <ul className="list">
-            <li className="item">
-              사용기술 : <span>{this.state.data.tech}</span>
+        <div className="project-detail__info">{makeTxt()}</div>
+        <div className="project-detail__area">
+          <ul className="project-detail__list">
+            <li className="project-detail__item">
+              사용기술 : <span>{data.tech}</span>
             </li>
-            <li className="item">
-              링크 : <a className="link" href={this.state.data.link} target="_blank" rel="noreferrer" title="새 창 열림">{this.state.data.link}</a>
+            <li className="project-detail__item">
+              링크 : <a className="project-detail__link" href={data.link} target="_blank" rel="noreferrer" title="새 창 열림">{data.link}</a>
             </li>
-            <li className="item">
+            <li className="project-detail__item">
               담당업무 :
-              <ul className="role_list">{makeRoleList()}</ul>
+              <ul className="project-detail__roles">{makeRoleList()}</ul>
             </li>
           </ul>
         </div>

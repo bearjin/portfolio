@@ -1,36 +1,36 @@
 // home
 .home {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
 
-    &+.sec {
-        padding-top: 0;
+  &+.sec {
+    padding-top: 0;
+  }
+
+  .typewriter {
+    font-weight: 600;
+    font-size: 50px;
+
+    span {
+      border-right: .05em solid;
+      animation: caret 1s steps(1) infinite;
     }
-
-    .typewriter {
-        font-weight: 600;
-        font-size: 50px;
-
-        span {
-            border-right: .05em solid;
-            animation: caret 1s steps(1) infinite;
-        }
-    }
+  }
 }
 
 @keyframes caret {
-    50% {
-        border-color: transparent;
-    }
+  50% {
+    border-color: transparent;
+  }
 }
 
 @include mobile {
-    .home {
-        .typewriter {
-            font-size: 40px;
-        }
+  .home {
+    .typewriter {
+      font-size: 40px;
     }
+  }
 }

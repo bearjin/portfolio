@@ -1,167 +1,159 @@
 // career
 .career {
-    &_detail {
-        &_intro {
-            padding-bottom: 30px;
-            margin-bottom: 30px;
-            border-bottom: 1px solid #000;
+  &-intro {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #000;
 
-            .career_detail_txt {
-                &+.career_detail_txt {
-                    margin-top: 20px;
-                }
-            }
-        }
+    &__txt {
+      &+& {
+        margin-top: 20px;
+      }
+    }
+  }
 
-        &_profile {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
+  &-profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
 
-            .profile_img {
-                width: 200px;
-                height: 200px;
-                background-color: #000;
-                background-position: 50%;
-                background-repeat: no-repeat;
-            }
+    &__img {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color: #000;
 
-            .profile_info {
-                margin-left: 30px;
-
-                .tit {
-                    font-weight: 600;
-                    font-size: 30px;
-                }
-
-                .year {
-                    font-size: 20px;
-                }
-
-                .role {
-                    font-size: 22px;
-                }
-            }
-        }
+      img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
 
-    &_project_list {
-
-        .item {
-            margin-bottom: 10px;
-
-            .name {
-                position: relative;
-                padding-left: 15px;
-                font-weight: 600;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    left: 0;
-                    top: 7px;
-                    width: 4px;
-                    height: 18px;
-                    background-color: #000;
-                }
-            }
-
-            .list {
-                padding-left: 10px;
-
-                .sub_item {
-                    position: relative;
-                    padding-left: 15px;
-
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        left: 0;
-                        top: 50%;
-                        width: 8px;
-                        height: 1px;
-                        background-color: #000;
-                    }
-                }
-            }
-        }
+    &__info {
+      margin-left: 30px;
     }
+
+    &__tit {
+      font-weight: 600;
+      font-size: 30px;
+    }
+
+    &__year {
+      font-size: 20px;
+    }
+
+    &__role {
+      font-size: 22px;
+    }
+  }
+
+  &-project {
+    &__area {
+      margin-bottom: 10px;
+    }
+
+    &__name {
+      position: relative;
+      padding-left: 15px;
+      font-weight: 600;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 7px;
+        width: 4px;
+        height: 18px;
+        background-color: #000;
+      }
+    }
+
+    &__list {
+      padding-left: 10px;
+    }
+
+    &__item {
+      position: relative;
+      padding-left: 15px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 8px;
+        height: 1px;
+        background-color: #000;
+      }
+    }
+  }
 }
 
 @include tablet {
-    .career {
-        &_detail {
-            &_profile {
-                .profile_info {
-                    margin-left: 20px;
-                }
+  .career {
+    &-profile {
+      &__img {
+        width: 150px;
+        height: 150px;
 
-                .profile_img {
-                    width: 150px;
-                    height: 150px;
-                    background-size: 80%;
-                }
-
-                .profile_info {
-                    .tit {
-                        font-size: 24px;
-                    }
-
-                    .year {
-                        font-size: 16px;
-                    }
-
-                    .role {
-                        font-size: 16px;
-                    }
-                }
-            }
+        img {
+          width: 80%;
         }
+      }
+
+      &__info {
+        margin-left: 20px;
+      }
+
+      &__tit {
+        font-size: 24px;
+      }
+
+      &__year {
+        font-size: 16px;
+      }
+
+      &__role {
+        font-size: 16px;
+      }
     }
+  }
 }
 
 @include mobile {
-    .career {
-        &_detail {
-            &_profile {
-                flex-flow: column;
-                align-items: flex-start;
+  .career {
+    &-profile {
+      flex-flow: column;
+      align-items: flex-start;
 
-                .profile_img {
-                    width: 150px;
-                    height: 150px;
-                    background-size: 80%;
-                }
+      &__info {
+        margin: 20px 0 0 0;
+      }
 
-                .profile_info {
-                    margin: 20px 0 0 0;
+      &__tit {
+        font-size: 20px;
+      }
 
-                    .tit {
-                        font-size: 20px;
-                    }
+      &__year {
+        font-size: 16px;
+      }
 
-                    .year {
-                        font-size: 16px;
-                    }
-
-                    .role {
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
-
-        &_project_list {
-            .item {
-                .name {
-                    padding-left: 10px;
-
-                    &::before {
-                        top: 5px;
-                        height: 12px;
-                    }
-                }
-            }
-        }
+      &__role {
+        font-size: 14px;
+      }
     }
+
+    &-project {
+      &__name {
+        padding-left: 10px;
+
+        &::before {
+          top: 5px;
+          height: 12px;
+        }
+      }
+    }
+  }
 }

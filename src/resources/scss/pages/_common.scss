@@ -1,68 +1,68 @@
 // common
 .sec {
-    width: 100%;
-    max-width: 800px;
-    padding: 150px 0;
-    margin: 0 auto;
-    transition: all .6s ease;
+  width: 100%;
+  max-width: 800px;
+  padding: 150px 0;
+  margin: 0 auto;
+  transition: all .6s ease;
 
-    &+.sec {
-        padding-top: 0;
+  &+& {
+    padding-top: 0;
+  }
+
+  &__inner {
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  &__subj {
+    position: relative;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 32px;
+    font-style: italic;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      width: 65px;
+      height: 4px;
+      margin-left: 10px;
+      background-color: #393939;
     }
-
-    &_inner {
-        padding: 50px;
-        background-color: #fff;
-        border-radius: 20px;
-        box-shadow: 10px 10px 20px 5px rgba(0, 0, 0, 0.3);
-    }
-
-    &_subj {
-        position: relative;
-        margin-bottom: 40px;
-        font-weight: 700;
-        font-size: 32px;
-        font-style: italic;
-
-        &::after {
-            content: '';
-            display: inline-block;
-            width: 65px;
-            height: 4px;
-            margin-left: 10px;
-            background-color: #393939;
-        }
-    }
+  }
 }
 
 .page-enter {
-    opacity: 0;
-    transform: translateY(-50px);
+  opacity: 0;
+  transform: translateY(-50px);
 }
 
 @include tablet {
-    .sec {
-        max-width: calc(100% - 200px);
-    }
+  .sec {
+    max-width: calc(100% - 200px);
+  }
 }
 
 @include mobile {
-    .sec {
-        max-width: 85%;
-        padding: 100px 0;
+  .sec {
+    max-width: 85%;
+    padding: 100px 0;
 
-        &_inner {
-            padding: 35px 25px;
-        }
-
-        &_subj {
-            margin-bottom: 20px;
-            font-size: 24px;
-
-            &::after {
-                width: 50px;
-                height: 2px;
-            }
-        }
+    &__inner {
+      padding: 35px 25px;
     }
+
+    &__subj {
+      margin-bottom: 20px;
+      font-size: 24px;
+
+      &::after {
+        width: 50px;
+        height: 2px;
+      }
+    }
+  }
 }
