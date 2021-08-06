@@ -1,4 +1,10 @@
 // common
+.container {
+  position: relative;
+  z-index: 2;
+  background-color: #fee253;
+}
+
 .sec {
   width: 100%;
   max-width: 800px;
