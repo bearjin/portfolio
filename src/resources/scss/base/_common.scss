@@ -7,14 +7,14 @@
   width: 100%;
   height: 84px;
 
-  &-inner {
+  &__inner {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
   }
 
-  &-logo {
+  &__logo {
     position: absolute;
     left: 50%;
     top: 10px;
@@ -25,7 +25,7 @@
     background: url(../images/desktop.png) 0 0 no-repeat;
     background-size: cover;
 
-    &__link {
+    &-link {
       display: block;
       width: 100%;
       height: 100%;
@@ -33,7 +33,7 @@
     }
   }
 
-  &-menu {
+  &__menu {
     visibility: hidden;
     position: absolute;
     top: 20px;
@@ -44,7 +44,7 @@
     border: 0;
     cursor: pointer;
 
-    &__bar {
+    &-bar {
       position: relative;
       display: block;
       width: 28px;
@@ -85,7 +85,7 @@
       }
     }
 
-    &__text {
+    &-text {
       display: block;
       margin-top: 5px;
       font-weight: 500;
@@ -99,17 +99,17 @@
 
 /* gnb */
 .gnb {
-  &-inner {
+  &__inner {
     display: flex;
     align-items: center;
     height: 84px;
 
-    &__item {
+    &-item {
       flex: auto;
       text-align: center;
     }
 
-    &__link {
+    &-link {
       font-weight: 600;
       font-size: 20px;
       color: #000;
@@ -141,11 +141,11 @@
     top: 0;
     height: auto;
 
-    &-inner {
+    &__inner {
       height: 0;
     }
 
-    &-logo {
+    &__logo {
       left: 20px;
       top: 20px;
       width: 40px;
@@ -153,7 +153,7 @@
       margin-left: 0;
     }
 
-    &-menu {
+    &__menu {
       visibility: visible;
     }
   }
@@ -172,11 +172,11 @@
       transform: translateY(0);
     }
 
-    &-inner {
+    &__inner {
       flex-flow: column;
       height: auto;
 
-      &__item {
+      &-item {
         width: 100%;
         margin-bottom: 10px;
 
@@ -185,7 +185,7 @@
         }
       }
 
-      &__link {
+      &-link {
         display: inline-block;
         width: 80%;
         padding: 10px 0;
