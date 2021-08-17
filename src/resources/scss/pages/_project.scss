@@ -6,34 +6,41 @@
     flex-wrap: wrap;
 
     &__item {
+      overflow: hidden;
       width: 100%;
       max-width: calc((100% / 3) - 20px);
       margin: 0 10px 30px 10px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
       cursor: pointer;
+      transition: transform .3s ease-in-out;
+
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: 7px 10px 10px 5px rgba(0, 0, 0, .15);
+      }
     }
 
     &__img {
       position: relative;
       width: 100%;
-      height: 150px;
-      margin-bottom: 10px;
+      height: 120px;
       background-color: #2d2d2d;
-      border-radius: 20px;
 
       img {
         position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        transition: transform .5s ease-in;
-
-        .project-list__item:hover & {
-          transform: translate(-50%, -50%) scale(1.2);
-        }
       }
     }
 
+    &__info {
+      padding: 10px 15px;
+    }
+
     &__subj {
+      font-weight: 600;
       font-size: 16px;
     }
 
@@ -156,7 +163,7 @@
       }
 
       &__img {
-        height: 200px;
+        height: 150px;
       }
     }
 

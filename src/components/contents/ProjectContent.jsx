@@ -13,8 +13,10 @@ const ProjectContent = () => {
             <div className="project-list__img">
               <img src={require(`../../resources/images/project/${elm.img}.png`).default} alt={elm.img} />
             </div>
-            <p className="project-list__subj">{elm.subj}</p>
-            <p className="project-list__date">{elm.date}</p>
+            <div className="project-list__info">
+              <p className="project-list__subj">{elm.subj}</p>
+              <p className="project-list__date">{elm.date}</p>
+            </div>
           </Link>
         </li >
       );

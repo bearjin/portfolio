@@ -9,7 +9,7 @@ const Home = () => {
           document.querySelector(".typewriter").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
           setTimeout(() => {
             typeWriter(text, i + 1, fnCallback)
-          }, 150);
+          }, 100);
         }
       }
       else if (typeof fnCallback === 'function') {
