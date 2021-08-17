@@ -2,14 +2,14 @@ import React, { useCallback, useEffect } from 'react';
 
 const Home = () => {
   const textMotion = useCallback(() => {
-    const dataText = ["Hello World.", "열정을 가지고 소통하는 개발자가 되겠습니다.", "Front-end developer.", "Bearjin"];
+    const dataText = ["Hello World.", "끊임없이 성장하고 소통하는 개발자가 되겠습니다.", "Web Publisher.", "Bearjin"];
     const typeWriter = (text, i, fnCallback) => {
       if (i < (text.length)) {
         if (document.querySelector(".typewriter")) {
           document.querySelector(".typewriter").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
           setTimeout(() => {
             typeWriter(text, i + 1, fnCallback)
-          }, 100);
+          }, 150);
         }
       }
       else if (typeof fnCallback === 'function') {
