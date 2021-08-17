@@ -303,3 +303,18 @@ input[type=text]::-ms-clear { display: none; }
   .project-detail__back { top: 38px; right: 25px; width: 28px; height: 28px; }
   .project-detail__item::before { top: 9px; }
   .project-detail__role::before { top: 10px; } }
+
+.main-slider { padding-bottom: 100px; text-align: center; }
+
+.main-slider .swiper-button-prev, .main-slider .swiper-button-next { font-weight: bold; color: #000; }
+
+.main-slider .swiper-button-prev { left: calc((100% - 1000px) / 2); }
+
+.main-slider .swiper-button-next { right: calc((100% - 1000px) / 2); }
+
+.main-slider .swiper-pagination { display: none; }
+
+.main-slider .sec { display: inline-block; text-align: left; }
+
+@media (max-width: 1024px) { .main-slider .swiper-button-prev { left: 20px; }
+  .main-slider .swiper-button-next { right: 20px; } }
