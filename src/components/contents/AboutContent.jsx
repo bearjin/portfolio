@@ -10,27 +10,14 @@ const makeIntroLink = (data) => {
   return links;
 };
 
-const makeRankMeter = (rankNum) => {
-  let ranks = [];
-  for (let index = 0; index < 10; index++) {
-    if (index < rankNum) {
-      ranks.push(<span key={index} className="about-skills__meter about-skills__meter--active"></span>);
-    } else {
-      ranks.push(<span key={index} className="about-skills__meter"></span>);
-    }
-  }
-  return ranks;
-};
-
 const makeSkillList = (data) => {
   const lists = data.skills.map((elm, idx) => {
     return (
       <li key={idx} className="about-skills__item" data-item={elm.data}>
-        <p className="about-skills__name">{elm.name}</p>
         <div className="about-skills__info">
           <div className="about-skills__img"><img src={require(`../../resources/images/about/${elm.img}.png`).default} alt={elm.img} /></div>
-          <div className="about-skills__rank">{makeRankMeter(elm.rank)}</div>
         </div>
+        <p className="about-skills__name">{elm.name}</p>
       </li>
     );
   });
@@ -62,7 +49,6 @@ const AboutContent = () => {
       <div className="sec__inner">
         <h2 className="sec__subj">ABOUT</h2>
         <div className="about-intro">
-          <p className="about-intro__name">{introData.name}</p>
           <p className="about-intro__txt">{introData.txt}</p>
           <a className="about-intro__email" href={`mailto:${introData.email}`} target="_blank" rel="noreferrer" title="새 창 열림">{introData.email}</a>
           <ul className="about-intro__links">
