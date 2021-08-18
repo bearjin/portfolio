@@ -1,6 +1,36 @@
 import React, { useCallback } from 'react';
 import { Link } from 'react-router-dom';
 
+const headerShowHidden = () => {
+  let _prevScrTop = 0, _currentScrTop, _prevDir, _currentDir;
+  const $body = document.querySelector('body');
+
+  return (current) => {
+    if (current === 0) { $body.classList.remove('scrUp'); }
+
+    _currentScrTop = current || 0;
+
+    if (_prevScrTop === _currentScrTop) { return; }
+
+    _currentDir = _currentScrTop > _prevScrTop ? 'scrDown' : 'scrUp';
+    _prevScrTop = _currentScrTop;
+
+    if (_prevDir === _currentDir) { return; }
+
+    _prevDir = _currentDir;
+
+    $body.classList.remove(_currentDir === 'scrUp' ? 'scrDown' : 'scrUp');
+    $body.classList.add(_currentDir);
+  };
+}
+
+const globalScroll = headerShowHidden();
+
+document.addEventListener('scroll', () => {
+  const _scrollTop = window.scrollY;
+  globalScroll(_scrollTop);
+});
+
 const Header = () => {
   const onClickMenu = useCallback(() => {
     const $header = document.querySelector('.header');
