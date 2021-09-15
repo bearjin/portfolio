@@ -1,37 +1,37 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useRef } from 'react';
 import { Link } from 'react-router-dom';
 
-const headerShowHidden = () => {
-  let _prevScrTop = 0, _currentScrTop, _prevDir, _currentDir;
-  const $body = document.querySelector('body');
-
-  return (current) => {
-    if (current === 0) { $body.classList.remove('scrUp'); }
-
-    _currentScrTop = current || 0;
-
-    if (_prevScrTop === _currentScrTop) { return; }
-
-    _currentDir = _currentScrTop > _prevScrTop ? 'scrDown' : 'scrUp';
-    _prevScrTop = _currentScrTop;
-
-    if (_prevDir === _currentDir) { return; }
-
-    _prevDir = _currentDir;
-
-    $body.classList.remove(_currentDir === 'scrUp' ? 'scrDown' : 'scrUp');
-    $body.classList.add(_currentDir);
-  };
-}
-
-const globalScroll = headerShowHidden();
-
-document.addEventListener('scroll', () => {
-  const _scrollTop = window.scrollY;
-  globalScroll(_scrollTop);
-});
-
 const Header = () => {
+  const _prevScrTop = useRef(0);
+  const _currentScrTop = useRef();
+  const _prevDir = useRef();
+  const _currentDir = useRef();
+
+  const headerShowHidden = useCallback((_current) => {
+    const $body = document.querySelector('body');
+
+    if (_current === 0) { $body.classList.remove('scrUp'); }
+
+    _currentScrTop.current = _current || 0;
+
+    if (_prevScrTop.current === _currentScrTop.current) { return; }
+
+    _currentDir.current = _currentScrTop.current > _prevScrTop.current ? 'scrDown' : 'scrUp';
+    _prevScrTop.current = _currentScrTop.current;
+
+    if (_prevDir.current === _currentDir.current) { return; }
+
+    _prevDir.current = _currentDir.current;
+
+    $body.classList.remove(_currentDir.current === 'scrUp' ? 'scrDown' : 'scrUp');
+    $body.classList.add(_currentDir.current);
+  }, []);
+
+  document.addEventListener('scroll', () => {
+    const _scrollTop = window.scrollY;
+    headerShowHidden(_scrollTop);
+  });
+
   const onClickMenu = useCallback(() => {
     const $header = document.querySelector('.header');
     $header.classList.toggle('open');
